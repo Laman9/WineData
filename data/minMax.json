@@ -1,0 +1,295 @@
+[ {
+  "country" : "Italy",
+  "min" : 5,
+  "max" : 900,
+  "mean" : 39.663769658271256,
+  "cheap" : "Anna Spinato NV Mini  (Prosecco)",
+  "expensive" : "Biondi Santi 2006 Riserva  (Brunello di Montalcino)"
+}, {
+  "country" : "Portugal",
+  "min" : 5,
+  "max" : 1000,
+  "mean" : 26.21825641025641,
+  "cheap" : "Herdade dos Machados 2009 Morgado da Canita Red (Alentejano)",
+  "expensive" : "W. & J. Graham's NV 90-year Old Tawny  (Port)"
+}, {
+  "country" : "US",
+  "min" : 4,
+  "max" : 2013,
+  "mean" : 36.5734635584631,
+  "cheap" : "Dancing Coyote 2015 White (Clarksburg)",
+  "expensive" : "Blair 2013 Roger Rose Vineyard Chardonnay (Arroyo Seco)"
+}, {
+  "country" : "Spain",
+  "min" : 4,
+  "max" : 770,
+  "mean" : 28.215274608245853,
+  "cheap" : "Felix Solis 2013 Flirty Bird Syrah (Vino de la Tierra de Castilla)",
+  "expensive" : "Marco Abella 2012 El Perer Carignan (Priorat)"
+}, {
+  "country" : "France",
+  "min" : 5,
+  "max" : 3300,
+  "mean" : 41.139120162016205,
+  "cheap" : "Belle Made For You NV Cabernet Sauvignon (Vin de France)",
+  "expensive" : "Château les Ormes Sorbet 2013  Médoc"
+}, {
+  "country" : "Germany",
+  "min" : 5,
+  "max" : 775,
+  "mean" : 42.25754716981132,
+  "cheap" : "Landshut 2009 Riesling (Mosel)",
+  "expensive" : "Robert Weil 2014 Kiedrich Gräfenberg Trockenbeerenauslese Riesling (Rheingau)"
+}, {
+  "country" : "Argentina",
+  "min" : 4,
+  "max" : 230,
+  "mean" : 24.510117145899894,
+  "cheap" : "Broke Ass 2009 Red Malbec-Syrah (Mendoza)",
+  "expensive" : "Viña Cobos 2012 Volturno Marchiori Vineyard Cabernet Sauvignon (Perdriel)"
+}, {
+  "country" : "Chile",
+  "min" : 5,
+  "max" : 400,
+  "mean" : 20.786458333333332,
+  "cheap" : "San Pedro 2002 Gato Negro Cabernet Sauvignon (Central Valley)",
+  "expensive" : "Errazuriz 2010 Viñedo Chadwick Red (Maipo Valley)"
+}, {
+  "country" : "Australia",
+  "min" : 5,
+  "max" : 850,
+  "mean" : 35.43766346992153,
+  "cheap" : "Kelly's Revenge 2006 Chardonnay (South Eastern Australia)",
+  "expensive" : "Penfolds 2010 Grange Shiraz (South Australia)"
+}, {
+  "country" : "Austria",
+  "min" : 7,
+  "max" : 1100,
+  "mean" : 30.76277241872097,
+  "cheap" : "Hafner 2007 Kosher Muskat Ottonel (Burgenland)",
+  "expensive" : "Emmerich Knoll 2013 Ried Loibenberg Smaragd Grüner Veltliner (Wachau)"
+}, {
+  "country" : "South Africa",
+  "min" : 5,
+  "max" : 330,
+  "mean" : 24.668986852281517,
+  "cheap" : "Chaza NV Moscato (Western Cape)",
+  "expensive" : "De Toren 2014 Book 17 XVII Red (Stellenbosch)"
+}, {
+  "country" : "New Zealand",
+  "min" : 7,
+  "max" : 130,
+  "mean" : 26.93178519593614,
+  "cheap" : "Riparian 2008 Sauvignon Blanc (Marlborough)",
+  "expensive" : "Akarua 2012 The Siren Bannockburn Pinot Noir (Central Otago)"
+}, {
+  "country" : "Israel",
+  "min" : 8,
+  "max" : 150,
+  "mean" : 31.768916155419223,
+  "cheap" : "Barkan 1998 Reserve Chardonnay (Galil)",
+  "expensive" : "Golan Heights Winery 2006 Yarden Rom Red (Galilee)"
+}, {
+  "country" : "Hungary",
+  "min" : 10,
+  "max" : 764,
+  "mean" : 40.648275862068964,
+  "cheap" : "Törley NV Gála Sparkling (Hungary)",
+  "expensive" : "Royal Tokaji 2003 Essencia  (Tokaji)"
+}, {
+  "country" : "Greece",
+  "min" : 8,
+  "max" : 79,
+  "mean" : 22.364425162689805,
+  "cheap" : "Kourtaki NV Retsina of Attica Savatiano (Attica)",
+  "expensive" : "Gerovassiliou 2007 Evangelo Red (Epanomi)"
+}, {
+  "country" : "Romania",
+  "min" : 4,
+  "max" : 320,
+  "mean" : 15.241666666666667,
+  "cheap" : "Cramele Recas 2011 UnWineD Pinot Grigio (Viile Timisului)",
+  "expensive" : "Sirena Dunarii 2000 Dulce Riesling (Vânju Mare)"
+}, {
+  "country" : "Mexico",
+  "min" : 8,
+  "max" : 108,
+  "mean" : 26.785714285714285,
+  "cheap" : "L.A. Cetto 1999 Petite Sirah (Valle de Guadalupe)",
+  "expensive" : "El Sombrero 2009 Red (Valle de Guadalupe)"
+}, {
+  "country" : "Canada",
+  "min" : 12,
+  "max" : 120,
+  "mean" : 35.71259842519685,
+  "cheap" : "Pillitteri 2004 Fusion Gewürztraminer-Riesling (Niagara Peninsula)",
+  "expensive" : "Mission Hill 2011 Oculus Red (Okanagan Valley)"
+}, {
+  "country" : "Turkey",
+  "min" : 14,
+  "max" : 120,
+  "mean" : 24.633333333333333,
+  "cheap" : "Diren 2010 Red (Turkey)",
+  "expensive" : "Selendi 2010 Merlot (Aegean)"
+}, {
+  "country" : "Czech Republic",
+  "min" : 15,
+  "max" : 45,
+  "mean" : 24.25,
+  "cheap" : "Vino z Czech 2013 Michlovský Sauvignon Blanc (Moravia)",
+  "expensive" : "Stapleton & Springer 2007 Roucí Red (Moravia)"
+}, {
+  "country" : "Slovenia",
+  "min" : 7,
+  "max" : 90,
+  "mean" : 24.8125,
+  "cheap" : "Avia 2014 Hand Harvested Estate Bottled Chardonnay (Primorska)",
+  "expensive" : "Kabaj 2006 Amfora White (Goriska Brda)"
+}, {
+  "country" : "Luxembourg",
+  "min" : 16,
+  "max" : 30,
+  "mean" : 23.333333333333332,
+  "cheap" : "Domaines Vinsmoselle NV Pinot Luxembourg White (Moselle Luxembourgeoise)",
+  "expensive" : "Poll-Fabaire NV Poll on Ice Crémant de Luxembourg Demi-Sec Sparkling (Moselle Luxembourgeoise)"
+}, {
+  "country" : "Croatia",
+  "min" : 12,
+  "max" : 65,
+  "mean" : 25.450704225352112,
+  "cheap" : "Dingač Winery 2009 Plavac Mali (Peljesac)",
+  "expensive" : "Saints Hills 2009 Dinga Plavac Mali (Peljesac)"
+}, {
+  "country" : "Georgia",
+  "min" : 9,
+  "max" : 40,
+  "mean" : 19.321428571428573,
+  "cheap" : "Telavi 2010 Marani Rkatsiteli-Chardonnay White (Kakheti)",
+  "expensive" : "Telavi 2007 Satrapezo Saperavi (Kakheti)"
+}, {
+  "country" : "Uruguay",
+  "min" : 10,
+  "max" : 130,
+  "mean" : 26.40366972477064,
+  "cheap" : "Pueblo del Sol 2013 Tannat (Juanico)",
+  "expensive" : "Familia Deicas 2008 Massimo Deicas Tannat (Juanico)"
+}, {
+  "country" : "England",
+  "min" : 25,
+  "max" : 95,
+  "mean" : 51.68115942028985,
+  "cheap" : "Camel Valley 2013 Cornwall Sparkling (England)",
+  "expensive" : "Jenkyn Place Vineyard 2010 Blanc de Noir Sparkling (England)"
+}, {
+  "country" : "Lebanon",
+  "min" : 13,
+  "max" : 75,
+  "mean" : 30.685714285714287,
+  "cheap" : "Massaya 2013 Le Colombier Red (Bekaa Valley)",
+  "expensive" : "Ixsir 2011 El Red (Lebanon)"
+}, {
+  "country" : "Serbia",
+  "min" : 15,
+  "max" : 42,
+  "mean" : 24.5,
+  "cheap" : "Agrina 2014 Portuguiser (Fruška Gora)",
+  "expensive" : "Budimir 2007 Svb Rosa Red (Župa)"
+}, {
+  "country" : "Brazil",
+  "min" : 10,
+  "max" : 60,
+  "mean" : 23.76595744680851,
+  "cheap" : "Aurora Cellars 2004 Proprietary Red Red (Serra Gaúcha)",
+  "expensive" : "Casa Perini 2012 Quatro Red (Vale Trentino)"
+}, {
+  "country" : "Moldova",
+  "min" : 8,
+  "max" : 42,
+  "mean" : 16.74576271186441,
+  "cheap" : "Taking Root 2006 Bastardo-Merlot Red (Cahul)",
+  "expensive" : "Purcari 2014 Premium Musct Ottonel-Traminer Icewine White (Moldova)"
+}, {
+  "country" : "Morocco",
+  "min" : 14,
+  "max" : 40,
+  "mean" : 19.5,
+  "cheap" : "Ouled Thaleb 2012 White (Zenata)",
+  "expensive" : "Bernard Magrez 2014 Excelcio Syrah-Grenache (Guerrouane)"
+}, {
+  "country" : "Peru",
+  "min" : 10,
+  "max" : 68,
+  "mean" : 18.0625,
+  "cheap" : "Tacama 2010 Gran Blanco White (Ica)",
+  "expensive" : "Intipalka 2010 Valle del Sol No 1 Gran Reserva Red (Ica)"
+}, {
+  "country" : "India",
+  "min" : 10,
+  "max" : 20,
+  "mean" : 13.333333333333334,
+  "cheap" : "Sula 2013 Chenin Blanc (Nashik)",
+  "expensive" : "Sula 2011 Dindori Reserve Shiraz (Nashik)"
+}, {
+  "country" : "Bulgaria",
+  "min" : 8,
+  "max" : 100,
+  "mean" : 14.645390070921986,
+  "cheap" : "Vini 2009 Veni Vidi Vici Cabernet Sauvignon (Thracian Valley)",
+  "expensive" : "Midalidare 2012 Reserve Red (Thracian Valley)"
+}, {
+  "country" : "Cyprus",
+  "min" : 11,
+  "max" : 21,
+  "mean" : 16.272727272727273,
+  "cheap" : "Chrysorroyiatissa 2007 Ayios Andronicos White (Cyprus)",
+  "expensive" : "Tsiakkas 2014 Xynisteri (Lemesos)"
+}, {
+  "country" : "Armenia",
+  "min" : 14,
+  "max" : 15,
+  "mean" : 14.5,
+  "cheap" : "Van Ardi 2015 Estate Bottled Kangoun (Armenia)",
+  "expensive" : "Van Ardi 2015 Estate Bottled Rosé (Armenia)"
+}, {
+  "country" : "Switzerland",
+  "min" : 21,
+  "max" : 160,
+  "mean" : 85.28571428571429,
+  "cheap" : "Château d'Auvernier 2012 White (Neuchâtel)",
+  "expensive" : "Gantenbein 2011 Pinot Noir (Switzerland)"
+}, {
+  "country" : "Bosnia and Herzegovina",
+  "min" : 12,
+  "max" : 13,
+  "mean" : 12.5,
+  "cheap" : "Winery Čitluk 2011 Blatina (Mostar)",
+  "expensive" : "Winery Čitluk 2007 Vranac Vranec (Mostar)"
+}, {
+  "country" : "Ukraine",
+  "min" : 6,
+  "max" : 13,
+  "mean" : 9.214285714285714,
+  "cheap" : "Côtnar Hills 2014 Semi-Dry Rosé (Ukraine)",
+  "expensive" : "Artemovsk 2008 KrimSekt White Collection Brut Sparkling (Ukraine)"
+}, {
+  "country" : "Slovakia",
+  "min" : 16,
+  "max" : 16,
+  "mean" : 16.0,
+  "cheap" : "Château Bela 2008 Riesling (Muzla)",
+  "expensive" : "Château Bela 2008 Riesling (Muzla)"
+}, {
+  "country" : "Macedonia",
+  "min" : 15,
+  "max" : 20,
+  "mean" : 15.583333333333334,
+  "cheap" : "Bovin 2007 Sauvignon (Tikves)",
+  "expensive" : "Stobi 2011 Veritas Vranec (Tikves)"
+}, {
+  "country" : "China",
+  "min" : 18,
+  "max" : 18,
+  "mean" : 18.0,
+  "cheap" : "Chateau Changyu-Castel 2009 Noble Dragon Red (China)",
+  "expensive" : "Chateau Changyu-Castel 2009 Noble Dragon Red (China)"
+} ]

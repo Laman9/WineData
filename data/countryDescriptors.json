@@ -1,0 +1,2575 @@
+
+{
+  "Cyprus" : [ {
+    "term" : "white",
+    "frequency" : 10
+  }, {
+    "term" : "citrus",
+    "frequency" : 7
+  }, {
+    "term" : "spice",
+    "frequency" : 6
+  }, {
+    "term" : "fresh",
+    "frequency" : 5
+  }, {
+    "term" : "flowers",
+    "frequency" : 3
+  }, {
+    "term" : "peach",
+    "frequency" : 3
+  }, {
+    "term" : "honeyed",
+    "frequency" : 3
+  }, {
+    "term" : "poultry",
+    "frequency" : 3
+  }, {
+    "term" : "orange",
+    "frequency" : 3
+  }, {
+    "term" : "refreshing",
+    "frequency" : 3
+  }, {
+    "term" : "fish",
+    "frequency" : 3
+  }, {
+    "term" : "sweet",
+    "frequency" : 3
+  }, {
+    "term" : "minerals",
+    "frequency" : 2
+  }, {
+    "term" : "delicate",
+    "frequency" : 2
+  }, {
+    "term" : "nut",
+    "frequency" : 2
+  }, {
+    "term" : "edge",
+    "frequency" : 2
+  }, {
+    "term" : "balance",
+    "frequency" : 2
+  }, {
+    "term" : "complex",
+    "frequency" : 2
+  }, {
+    "term" : "vanilla",
+    "frequency" : 2
+  }, {
+    "term" : "crisp",
+    "frequency" : 2
+  } ],
+  "Egypt" : [ {
+    "term" : "tropical",
+    "frequency" : 1
+  }, {
+    "term" : "apple",
+    "frequency" : 1
+  }, {
+    "term" : "easy-drinking",
+    "frequency" : 1
+  }, {
+    "term" : "pear",
+    "frequency" : 1
+  }, {
+    "term" : "creamy",
+    "frequency" : 1
+  }, {
+    "term" : "poultry",
+    "frequency" : 1
+  }, {
+    "term" : "cheeses",
+    "frequency" : 1
+  }, {
+    "term" : "salads",
+    "frequency" : 1
+  }, {
+    "term" : "yellow",
+    "frequency" : 1
+  }, {
+    "term" : "ripe",
+    "frequency" : 1
+  }, {
+    "term" : "clean",
+    "frequency" : 1
+  } ],
+  "England" : [ {
+    "term" : "apple",
+    "frequency" : 61
+  }, {
+    "term" : "creamy",
+    "frequency" : 37
+  }, {
+    "term" : "tart",
+    "frequency" : 36
+  }, {
+    "term" : "lemon",
+    "frequency" : 35
+  }, {
+    "term" : "crisp",
+    "frequency" : 28
+  }, {
+    "term" : "fresh",
+    "frequency" : 26
+  }, {
+    "term" : "mousse",
+    "frequency" : 24
+  }, {
+    "term" : "green",
+    "frequency" : 24
+  }, {
+    "term" : "autolysis",
+    "frequency" : 23
+  }, {
+    "term" : "fine",
+    "frequency" : 22
+  }, {
+    "term" : "touch",
+    "frequency" : 20
+  }, {
+    "term" : "ripe",
+    "frequency" : 20
+  }, {
+    "term" : "red",
+    "frequency" : 19
+  }, {
+    "term" : "brisk",
+    "frequency" : 18
+  }, {
+    "term" : "bubbles",
+    "frequency" : 17
+  }, {
+    "term" : "lasting",
+    "frequency" : 16
+  }, {
+    "term" : "elegant",
+    "frequency" : 16
+  }, {
+    "term" : "pure",
+    "frequency" : 16
+  }, {
+    "term" : "refreshing",
+    "frequency" : 16
+  }, {
+    "term" : "lively",
+    "frequency" : 15
+  } ],
+  "Portugal" : [ {
+    "term" : "ripe",
+    "frequency" : 2366
+  }, {
+    "term" : "tannins",
+    "frequency" : 2341
+  }, {
+    "term" : "rich",
+    "frequency" : 1669
+  }, {
+    "term" : "black",
+    "frequency" : 1289
+  }, {
+    "term" : "fruity",
+    "frequency" : 1265
+  }, {
+    "term" : "ready",
+    "frequency" : 1120
+  }, {
+    "term" : "soft",
+    "frequency" : 1041
+  }, {
+    "term" : "wood",
+    "frequency" : 1030
+  }, {
+    "term" : "aging",
+    "frequency" : 970
+  }, {
+    "term" : "fresh",
+    "frequency" : 941
+  }, {
+    "term" : "full",
+    "frequency" : 924
+  }, {
+    "term" : "crisp",
+    "frequency" : 909
+  }, {
+    "term" : "structure",
+    "frequency" : 849
+  }, {
+    "term" : "red",
+    "frequency" : 821
+  }, {
+    "term" : "juicy",
+    "frequency" : 820
+  }, {
+    "term" : "firm",
+    "frequency" : 772
+  }, {
+    "term" : "dry",
+    "frequency" : 742
+  }, {
+    "term" : "dense",
+    "frequency" : 738
+  }, {
+    "term" : "spice",
+    "frequency" : 711
+  }, {
+    "term" : "dark",
+    "frequency" : 704
+  } ],
+  "Greece" : [ {
+    "term" : "spice",
+    "frequency" : 252
+  }, {
+    "term" : "red",
+    "frequency" : 211
+  }, {
+    "term" : "white",
+    "frequency" : 197
+  }, {
+    "term" : "cherry",
+    "frequency" : 143
+  }, {
+    "term" : "citrus",
+    "frequency" : 141
+  }, {
+    "term" : "lemon",
+    "frequency" : 133
+  }, {
+    "term" : "fresh",
+    "frequency" : 123
+  }, {
+    "term" : "spicy",
+    "frequency" : 94
+  }, {
+    "term" : "elegant",
+    "frequency" : 93
+  }, {
+    "term" : "vanilla",
+    "frequency" : 90
+  }, {
+    "term" : "pepper",
+    "frequency" : 83
+  }, {
+    "term" : "balanced",
+    "frequency" : 82
+  }, {
+    "term" : "black",
+    "frequency" : 76
+  }, {
+    "term" : "grilled",
+    "frequency" : 72
+  }, {
+    "term" : "clean",
+    "frequency" : 67
+  }, {
+    "term" : "flowers",
+    "frequency" : 66
+  }, {
+    "term" : "dishes",
+    "frequency" : 65
+  }, {
+    "term" : "tropical",
+    "frequency" : 64
+  }, {
+    "term" : "peach",
+    "frequency" : 62
+  }, {
+    "term" : "touch",
+    "frequency" : 57
+  } ],
+  "Armenia" : [ {
+    "term" : "bright",
+    "frequency" : 2
+  }, {
+    "term" : "pineapple",
+    "frequency" : 2
+  }, {
+    "term" : "white",
+    "frequency" : 2
+  }, {
+    "term" : "grapefruit",
+    "frequency" : 2
+  }, {
+    "term" : "papaya",
+    "frequency" : 1
+  }, {
+    "term" : "deep",
+    "frequency" : 1
+  }, {
+    "term" : "nectarine",
+    "frequency" : 1
+  }, {
+    "term" : "color",
+    "frequency" : 1
+  }, {
+    "term" : "salmon",
+    "frequency" : 1
+  }, {
+    "term" : "peach",
+    "frequency" : 1
+  }, {
+    "term" : "straw",
+    "frequency" : 1
+  }, {
+    "term" : "citrus",
+    "frequency" : 1
+  }, {
+    "term" : "entry",
+    "frequency" : 1
+  }, {
+    "term" : "pear",
+    "frequency" : 1
+  }, {
+    "term" : "brightness",
+    "frequency" : 1
+  }, {
+    "term" : "mouthfeel",
+    "frequency" : 1
+  }, {
+    "term" : "melon",
+    "frequency" : 1
+  }, {
+    "term" : "cantaloupe",
+    "frequency" : 1
+  }, {
+    "term" : "full",
+    "frequency" : 1
+  }, {
+    "term" : "soft",
+    "frequency" : 1
+  } ],
+  "Austria" : [ {
+    "term" : "fresh",
+    "frequency" : 1078
+  }, {
+    "term" : "ripe",
+    "frequency" : 1071
+  }, {
+    "term" : "pear",
+    "frequency" : 744
+  }, {
+    "term" : "lemon",
+    "frequency" : 628
+  }, {
+    "term" : "citrus",
+    "frequency" : 602
+  }, {
+    "term" : "red",
+    "frequency" : 545
+  }, {
+    "term" : "light",
+    "frequency" : 539
+  }, {
+    "term" : "green",
+    "frequency" : 516
+  }, {
+    "term" : "spice",
+    "frequency" : 487
+  }, {
+    "term" : "white",
+    "frequency" : 472
+  }, {
+    "term" : "pepper",
+    "frequency" : 466
+  }, {
+    "term" : "rich",
+    "frequency" : 428
+  }, {
+    "term" : "refreshing",
+    "frequency" : 425
+  }, {
+    "term" : "apple",
+    "frequency" : 419
+  }, {
+    "term" : "juicy",
+    "frequency" : 367
+  }, {
+    "term" : "cherry",
+    "frequency" : 356
+  }, {
+    "term" : "concentrated",
+    "frequency" : 343
+  }, {
+    "term" : "soft",
+    "frequency" : 342
+  }, {
+    "term" : "body",
+    "frequency" : 342
+  }, {
+    "term" : "dry",
+    "frequency" : 336
+  } ],
+  "Morocco" : [ {
+    "term" : "cherry",
+    "frequency" : 30
+  }, {
+    "term" : "tannins",
+    "frequency" : 19
+  }, {
+    "term" : "black",
+    "frequency" : 15
+  }, {
+    "term" : "bright",
+    "frequency" : 14
+  }, {
+    "term" : "peach",
+    "frequency" : 12
+  }, {
+    "term" : "smooth",
+    "frequency" : 11
+  }, {
+    "term" : "chocolate",
+    "frequency" : 10
+  }, {
+    "term" : "soft",
+    "frequency" : 9
+  }, {
+    "term" : "cranberry",
+    "frequency" : 8
+  }, {
+    "term" : "menthol",
+    "frequency" : 7
+  }, {
+    "term" : "floral",
+    "frequency" : 6
+  }, {
+    "term" : "white",
+    "frequency" : 6
+  }, {
+    "term" : "petal",
+    "frequency" : 6
+  }, {
+    "term" : "orange",
+    "frequency" : 6
+  }, {
+    "term" : "zest",
+    "frequency" : 6
+  }, {
+    "term" : "blackberry",
+    "frequency" : 6
+  }, {
+    "term" : "touch",
+    "frequency" : 5
+  }, {
+    "term" : "pepper",
+    "frequency" : 5
+  }, {
+    "term" : "lemon",
+    "frequency" : 5
+  }, {
+    "term" : "green",
+    "frequency" : 5
+  } ],
+  "Luxembourg" : [ {
+    "term" : "lemon",
+    "frequency" : 9
+  }, {
+    "term" : "white",
+    "frequency" : 4
+  }, {
+    "term" : "pith",
+    "frequency" : 4
+  }, {
+    "term" : "zest",
+    "frequency" : 4
+  }, {
+    "term" : "apple",
+    "frequency" : 3
+  }, {
+    "term" : "grapefruit",
+    "frequency" : 3
+  }, {
+    "term" : "curd",
+    "frequency" : 2
+  }, {
+    "term" : "balanced",
+    "frequency" : 2
+  }, {
+    "term" : "sparkling",
+    "frequency" : 2
+  }, {
+    "term" : "riesling",
+    "frequency" : 2
+  }, {
+    "term" : "pear",
+    "frequency" : 2
+  }, {
+    "term" : "tart",
+    "frequency" : 2
+  }, {
+    "term" : "bean",
+    "frequency" : 2
+  }, {
+    "term" : "vanilla",
+    "frequency" : 2
+  }, {
+    "term" : "floral",
+    "frequency" : 2
+  }, {
+    "term" : "mousse",
+    "frequency" : 1
+  }, {
+    "term" : "bright",
+    "frequency" : 1
+  }, {
+    "term" : "flakey",
+    "frequency" : 1
+  }, {
+    "term" : "zesty",
+    "frequency" : 1
+  }, {
+    "term" : "brioche",
+    "frequency" : 1
+  } ],
+  "China" : [ {
+    "term" : "cherry",
+    "frequency" : 1
+  }, {
+    "term" : "deep",
+    "frequency" : 1
+  }, {
+    "term" : "tar",
+    "frequency" : 1
+  }, {
+    "term" : "smoked",
+    "frequency" : 1
+  }, {
+    "term" : "backdrop",
+    "frequency" : 1
+  }, {
+    "term" : "savory",
+    "frequency" : 1
+  }, {
+    "term" : "black",
+    "frequency" : 1
+  }, {
+    "term" : "smoke",
+    "frequency" : 1
+  }, {
+    "term" : "chalky",
+    "frequency" : 1
+  }, {
+    "term" : "medley",
+    "frequency" : 1
+  }, {
+    "term" : "ruby-colored",
+    "frequency" : 1
+  }, {
+    "term" : "bacon",
+    "frequency" : 1
+  }, {
+    "term" : "cassis",
+    "frequency" : 1
+  }, {
+    "term" : "blackberry",
+    "frequency" : 1
+  }, {
+    "term" : "meat",
+    "frequency" : 1
+  }, {
+    "term" : "flint",
+    "frequency" : 1
+  }, {
+    "term" : "tannins",
+    "frequency" : 1
+  }, {
+    "term" : "soft",
+    "frequency" : 1
+  } ],
+  "Brazil" : [ {
+    "term" : "plum",
+    "frequency" : 17
+  }, {
+    "term" : "cherry",
+    "frequency" : 14
+  }, {
+    "term" : "berry",
+    "frequency" : 12
+  }, {
+    "term" : "yeasty",
+    "frequency" : 12
+  }, {
+    "term" : "tannic",
+    "frequency" : 12
+  }, {
+    "term" : "lychee",
+    "frequency" : 9
+  }, {
+    "term" : "earthy",
+    "frequency" : 8
+  }, {
+    "term" : "apple",
+    "frequency" : 8
+  }, {
+    "term" : "tropical",
+    "frequency" : 7
+  }, {
+    "term" : "hard",
+    "frequency" : 7
+  }, {
+    "term" : "dry",
+    "frequency" : 7
+  }, {
+    "term" : "foamy",
+    "frequency" : 7
+  }, {
+    "term" : "tannins",
+    "frequency" : 7
+  }, {
+    "term" : "black",
+    "frequency" : 6
+  }, {
+    "term" : "sweet",
+    "frequency" : 6
+  }, {
+    "term" : "melon",
+    "frequency" : 6
+  }, {
+    "term" : "brazilian",
+    "frequency" : 6
+  }, {
+    "term" : "bitter",
+    "frequency" : 6
+  }, {
+    "term" : "herbal",
+    "frequency" : 6
+  }, {
+    "term" : "citrus",
+    "frequency" : 6
+  } ],
+  "Slovenia" : [ {
+    "term" : "apple",
+    "frequency" : 35
+  }, {
+    "term" : "lemon",
+    "frequency" : 27
+  }, {
+    "term" : "cherry",
+    "frequency" : 27
+  }, {
+    "term" : "black",
+    "frequency" : 23
+  }, {
+    "term" : "peach",
+    "frequency" : 21
+  }, {
+    "term" : "red",
+    "frequency" : 17
+  }, {
+    "term" : "white",
+    "frequency" : 17
+  }, {
+    "term" : "green",
+    "frequency" : 17
+  }, {
+    "term" : "bright",
+    "frequency" : 16
+  }, {
+    "term" : "grass",
+    "frequency" : 15
+  }, {
+    "term" : "color",
+    "frequency" : 15
+  }, {
+    "term" : "savory",
+    "frequency" : 14
+  }, {
+    "term" : "pleasant",
+    "frequency" : 13
+  }, {
+    "term" : "vanilla",
+    "frequency" : 13
+  }, {
+    "term" : "slovenian",
+    "frequency" : 13
+  }, {
+    "term" : "soft",
+    "frequency" : 12
+  }, {
+    "term" : "pineapple",
+    "frequency" : 12
+  }, {
+    "term" : "raspberry",
+    "frequency" : 12
+  }, {
+    "term" : "sweet",
+    "frequency" : 11
+  }, {
+    "term" : "pear",
+    "frequency" : 11
+  } ],
+  "Slovakia" : [ {
+    "term" : "honey",
+    "frequency" : 3
+  }, {
+    "term" : "full-bodied",
+    "frequency" : 1
+  }, {
+    "term" : "luscious",
+    "frequency" : 1
+  }, {
+    "term" : "scents",
+    "frequency" : 1
+  }, {
+    "term" : "lime",
+    "frequency" : 1
+  }, {
+    "term" : "smoke",
+    "frequency" : 1
+  }, {
+    "term" : "skin",
+    "frequency" : 1
+  }, {
+    "term" : "dry",
+    "frequency" : 1
+  }, {
+    "term" : "gripping",
+    "frequency" : 1
+  }, {
+    "term" : "petrol",
+    "frequency" : 1
+  }, {
+    "term" : "tones",
+    "frequency" : 1
+  }, {
+    "term" : "apples",
+    "frequency" : 1
+  }, {
+    "term" : "astringency",
+    "frequency" : 1
+  }, {
+    "term" : "full",
+    "frequency" : 1
+  } ],
+  "France" : [ {
+    "term" : "ripe",
+    "frequency" : 8282
+  }, {
+    "term" : "tannins",
+    "frequency" : 6285
+  }, {
+    "term" : "rich",
+    "frequency" : 4899
+  }, {
+    "term" : "fresh",
+    "frequency" : 4007
+  }, {
+    "term" : "crisp",
+    "frequency" : 3963
+  }, {
+    "term" : "fruity",
+    "frequency" : 3878
+  }, {
+    "term" : "full",
+    "frequency" : 3486
+  }, {
+    "term" : "red",
+    "frequency" : 3435
+  }, {
+    "term" : "soft",
+    "frequency" : 3303
+  }, {
+    "term" : "dry",
+    "frequency" : 3246
+  }, {
+    "term" : "structure",
+    "frequency" : 2939
+  }, {
+    "term" : "black",
+    "frequency" : 2909
+  }, {
+    "term" : "wood",
+    "frequency" : 2830
+  }, {
+    "term" : "ready",
+    "frequency" : 2759
+  }, {
+    "term" : "light",
+    "frequency" : 2660
+  }, {
+    "term" : "spice",
+    "frequency" : 2636
+  }, {
+    "term" : "firm",
+    "frequency" : 2498
+  }, {
+    "term" : "juicy",
+    "frequency" : 2440
+  }, {
+    "term" : "bright",
+    "frequency" : 2300
+  }, {
+    "term" : "attractive",
+    "frequency" : 2300
+  } ],
+  "Chile" : [ {
+    "term" : "berry",
+    "frequency" : 1752
+  }, {
+    "term" : "herbal",
+    "frequency" : 1580
+  }, {
+    "term" : "plum",
+    "frequency" : 1483
+  }, {
+    "term" : "oak",
+    "frequency" : 1010
+  }, {
+    "term" : "green",
+    "frequency" : 966
+  }, {
+    "term" : "black",
+    "frequency" : 723
+  }, {
+    "term" : "spice",
+    "frequency" : 719
+  }, {
+    "term" : "cherry",
+    "frequency" : 697
+  }, {
+    "term" : "blackberry",
+    "frequency" : 691
+  }, {
+    "term" : "fresh",
+    "frequency" : 627
+  }, {
+    "term" : "citrus",
+    "frequency" : 558
+  }, {
+    "term" : "cassis",
+    "frequency" : 533
+  }, {
+    "term" : "apple",
+    "frequency" : 512
+  }, {
+    "term" : "tannins",
+    "frequency" : 494
+  }, {
+    "term" : "ripe",
+    "frequency" : 461
+  }, {
+    "term" : "herbs",
+    "frequency" : 457
+  }, {
+    "term" : "chocolate",
+    "frequency" : 452
+  }, {
+    "term" : "full",
+    "frequency" : 451
+  }, {
+    "term" : "olive",
+    "frequency" : 449
+  }, {
+    "term" : "raspberry",
+    "frequency" : 449
+  } ],
+  "Serbia" : [ {
+    "term" : "red",
+    "frequency" : 10
+  }, {
+    "term" : "cherry",
+    "frequency" : 7
+  }, {
+    "term" : "white",
+    "frequency" : 6
+  }, {
+    "term" : "lemon",
+    "frequency" : 6
+  }, {
+    "term" : "peach",
+    "frequency" : 5
+  }, {
+    "term" : "serbian",
+    "frequency" : 5
+  }, {
+    "term" : "green",
+    "frequency" : 4
+  }, {
+    "term" : "black",
+    "frequency" : 4
+  }, {
+    "term" : "blackberry",
+    "frequency" : 4
+  }, {
+    "term" : "olive",
+    "frequency" : 3
+  }, {
+    "term" : "soft",
+    "frequency" : 3
+  }, {
+    "term" : "flowers",
+    "frequency" : 3
+  }, {
+    "term" : "leather",
+    "frequency" : 3
+  }, {
+    "term" : "petrol",
+    "frequency" : 3
+  }, {
+    "term" : "eucalyptus",
+    "frequency" : 2
+  }, {
+    "term" : "riesling",
+    "frequency" : 2
+  }, {
+    "term" : "pith",
+    "frequency" : 2
+  }, {
+    "term" : "custard",
+    "frequency" : 2
+  }, {
+    "term" : "plum",
+    "frequency" : 2
+  }, {
+    "term" : "raspberry",
+    "frequency" : 2
+  } ],
+  "Bulgaria" : [ {
+    "term" : "cherry",
+    "frequency" : 134
+  }, {
+    "term" : "black",
+    "frequency" : 109
+  }, {
+    "term" : "tannins",
+    "frequency" : 48
+  }, {
+    "term" : "lemon",
+    "frequency" : 46
+  }, {
+    "term" : "red",
+    "frequency" : 43
+  }, {
+    "term" : "soft",
+    "frequency" : 35
+  }, {
+    "term" : "plum",
+    "frequency" : 33
+  }, {
+    "term" : "bulgarian",
+    "frequency" : 33
+  }, {
+    "term" : "vanilla",
+    "frequency" : 30
+  }, {
+    "term" : "raspberry",
+    "frequency" : 30
+  }, {
+    "term" : "apple",
+    "frequency" : 26
+  }, {
+    "term" : "blackberry",
+    "frequency" : 24
+  }, {
+    "term" : "ripe",
+    "frequency" : 24
+  }, {
+    "term" : "tart",
+    "frequency" : 21
+  }, {
+    "term" : "clean",
+    "frequency" : 20
+  }, {
+    "term" : "green",
+    "frequency" : 19
+  }, {
+    "term" : "pomegranate",
+    "frequency" : 18
+  }, {
+    "term" : "persistent",
+    "frequency" : 18
+  }, {
+    "term" : "white",
+    "frequency" : 18
+  }, {
+    "term" : "tobacco",
+    "frequency" : 18
+  } ],
+  "Bosnia and Herzegovina" : [ {
+    "term" : "black",
+    "frequency" : 3
+  }, {
+    "term" : "plum",
+    "frequency" : 1
+  }, {
+    "term" : "straightforward",
+    "frequency" : 1
+  }, {
+    "term" : "accessible",
+    "frequency" : 1
+  }, {
+    "term" : "espresso",
+    "frequency" : 1
+  }, {
+    "term" : "plums",
+    "frequency" : 1
+  }, {
+    "term" : "nuance",
+    "frequency" : 1
+  }, {
+    "term" : "bright",
+    "frequency" : 1
+  }, {
+    "term" : "lush",
+    "frequency" : 1
+  }, {
+    "term" : "red",
+    "frequency" : 1
+  }, {
+    "term" : "cedar",
+    "frequency" : 1
+  }, {
+    "term" : "coffee",
+    "frequency" : 1
+  }, {
+    "term" : "beans",
+    "frequency" : 1
+  }, {
+    "term" : "oak",
+    "frequency" : 1
+  }, {
+    "term" : "roasted",
+    "frequency" : 1
+  }, {
+    "term" : "ripe",
+    "frequency" : 1
+  }, {
+    "term" : "ground",
+    "frequency" : 1
+  }, {
+    "term" : "tannins",
+    "frequency" : 1
+  }, {
+    "term" : "fruit-forward",
+    "frequency" : 1
+  }, {
+    "term" : "smooth",
+    "frequency" : 1
+  } ],
+  "US" : [ {
+    "term" : "cherry",
+    "frequency" : 12811
+  }, {
+    "term" : "tannins",
+    "frequency" : 10833
+  }, {
+    "term" : "black",
+    "frequency" : 10773
+  }, {
+    "term" : "oak",
+    "frequency" : 9834
+  }, {
+    "term" : "ripe",
+    "frequency" : 8050
+  }, {
+    "term" : "dry",
+    "frequency" : 7267
+  }, {
+    "term" : "rich",
+    "frequency" : 6749
+  }, {
+    "term" : "red",
+    "frequency" : 6717
+  }, {
+    "term" : "sweet",
+    "frequency" : 6579
+  }, {
+    "term" : "spice",
+    "frequency" : 5772
+  }, {
+    "term" : "blackberry",
+    "frequency" : 5765
+  }, {
+    "term" : "soft",
+    "frequency" : 5629
+  }, {
+    "term" : "vanilla",
+    "frequency" : 5551
+  }, {
+    "term" : "light",
+    "frequency" : 5497
+  }, {
+    "term" : "dark",
+    "frequency" : 4945
+  }, {
+    "term" : "apple",
+    "frequency" : 4475
+  }, {
+    "term" : "raspberry",
+    "frequency" : 4467
+  }, {
+    "term" : "chocolate",
+    "frequency" : 4315
+  }, {
+    "term" : "fresh",
+    "frequency" : 4217
+  }, {
+    "term" : "pepper",
+    "frequency" : 4208
+  } ],
+  "Croatia" : [ {
+    "term" : "black",
+    "frequency" : 29
+  }, {
+    "term" : "cherry",
+    "frequency" : 29
+  }, {
+    "term" : "red",
+    "frequency" : 27
+  }, {
+    "term" : "fresh",
+    "frequency" : 25
+  }, {
+    "term" : "tannins",
+    "frequency" : 20
+  }, {
+    "term" : "lemon",
+    "frequency" : 18
+  }, {
+    "term" : "white",
+    "frequency" : 17
+  }, {
+    "term" : "bright",
+    "frequency" : 16
+  }, {
+    "term" : "vanilla",
+    "frequency" : 15
+  }, {
+    "term" : "croatian",
+    "frequency" : 15
+  }, {
+    "term" : "apple",
+    "frequency" : 13
+  }, {
+    "term" : "plum",
+    "frequency" : 12
+  }, {
+    "term" : "midpalate",
+    "frequency" : 12
+  }, {
+    "term" : "rich",
+    "frequency" : 11
+  }, {
+    "term" : "bold",
+    "frequency" : 11
+  }, {
+    "term" : "cranberry",
+    "frequency" : 11
+  }, {
+    "term" : "crisp",
+    "frequency" : 9
+  }, {
+    "term" : "sweet",
+    "frequency" : 9
+  }, {
+    "term" : "touch",
+    "frequency" : 9
+  }, {
+    "term" : "soft",
+    "frequency" : 8
+  } ],
+  "Argentina" : [ {
+    "term" : "berry",
+    "frequency" : 1649
+  }, {
+    "term" : "plum",
+    "frequency" : 1219
+  }, {
+    "term" : "blackberry",
+    "frequency" : 944
+  }, {
+    "term" : "herbal",
+    "frequency" : 868
+  }, {
+    "term" : "oak",
+    "frequency" : 829
+  }, {
+    "term" : "black",
+    "frequency" : 692
+  }, {
+    "term" : "spice",
+    "frequency" : 577
+  }, {
+    "term" : "cherry",
+    "frequency" : 555
+  }, {
+    "term" : "ripe",
+    "frequency" : 548
+  }, {
+    "term" : "chocolate",
+    "frequency" : 517
+  }, {
+    "term" : "tannins",
+    "frequency" : 491
+  }, {
+    "term" : "sweet",
+    "frequency" : 451
+  }, {
+    "term" : "cassis",
+    "frequency" : 432
+  }, {
+    "term" : "oaky",
+    "frequency" : 429
+  }, {
+    "term" : "full",
+    "frequency" : 426
+  }, {
+    "term" : "fresh",
+    "frequency" : 412
+  }, {
+    "term" : "green",
+    "frequency" : 400
+  }, {
+    "term" : "baked",
+    "frequency" : 388
+  }, {
+    "term" : "tannic",
+    "frequency" : 384
+  }, {
+    "term" : "earthy",
+    "frequency" : 373
+  } ],
+  "Romania" : [ {
+    "term" : "cherry",
+    "frequency" : 71
+  }, {
+    "term" : "red",
+    "frequency" : 41
+  }, {
+    "term" : "black",
+    "frequency" : 41
+  }, {
+    "term" : "plum",
+    "frequency" : 30
+  }, {
+    "term" : "lemon",
+    "frequency" : 28
+  }, {
+    "term" : "white",
+    "frequency" : 28
+  }, {
+    "term" : "romanian",
+    "frequency" : 27
+  }, {
+    "term" : "peach",
+    "frequency" : 24
+  }, {
+    "term" : "tannins",
+    "frequency" : 22
+  }, {
+    "term" : "apple",
+    "frequency" : 21
+  }, {
+    "term" : "fresh",
+    "frequency" : 19
+  }, {
+    "term" : "green",
+    "frequency" : 19
+  }, {
+    "term" : "vanilla",
+    "frequency" : 18
+  }, {
+    "term" : "flowers",
+    "frequency" : 18
+  }, {
+    "term" : "ripe",
+    "frequency" : 17
+  }, {
+    "term" : "crisp",
+    "frequency" : 16
+  }, {
+    "term" : "bright",
+    "frequency" : 14
+  }, {
+    "term" : "soft",
+    "frequency" : 13
+  }, {
+    "term" : "touch",
+    "frequency" : 13
+  }, {
+    "term" : "tart",
+    "frequency" : 12
+  } ],
+  "Hungary" : [ {
+    "term" : "peach",
+    "frequency" : 51
+  }, {
+    "term" : "cherry",
+    "frequency" : 50
+  }, {
+    "term" : "apricot",
+    "frequency" : 48
+  }, {
+    "term" : "lemon",
+    "frequency" : 43
+  }, {
+    "term" : "white",
+    "frequency" : 40
+  }, {
+    "term" : "pear",
+    "frequency" : 35
+  }, {
+    "term" : "black",
+    "frequency" : 35
+  }, {
+    "term" : "apple",
+    "frequency" : 32
+  }, {
+    "term" : "dry",
+    "frequency" : 31
+  }, {
+    "term" : "fresh",
+    "frequency" : 30
+  }, {
+    "term" : "tart",
+    "frequency" : 30
+  }, {
+    "term" : "hungarian",
+    "frequency" : 28
+  }, {
+    "term" : "sweet",
+    "frequency" : 27
+  }, {
+    "term" : "honey",
+    "frequency" : 26
+  }, {
+    "term" : "vanilla",
+    "frequency" : 24
+  }, {
+    "term" : "red",
+    "frequency" : 23
+  }, {
+    "term" : "juice",
+    "frequency" : 23
+  }, {
+    "term" : "crisp",
+    "frequency" : 22
+  }, {
+    "term" : "furmint",
+    "frequency" : 21
+  }, {
+    "term" : "spice",
+    "frequency" : 20
+  } ],
+  "Uruguay" : [ {
+    "term" : "berry",
+    "frequency" : 52
+  }, {
+    "term" : "plum",
+    "frequency" : 41
+  }, {
+    "term" : "oak",
+    "frequency" : 28
+  }, {
+    "term" : "blackberry",
+    "frequency" : 28
+  }, {
+    "term" : "black",
+    "frequency" : 23
+  }, {
+    "term" : "spice",
+    "frequency" : 22
+  }, {
+    "term" : "herbal",
+    "frequency" : 22
+  }, {
+    "term" : "tannins",
+    "frequency" : 22
+  }, {
+    "term" : "toasty",
+    "frequency" : 21
+  }, {
+    "term" : "tannic",
+    "frequency" : 20
+  }, {
+    "term" : "full",
+    "frequency" : 18
+  }, {
+    "term" : "tomato",
+    "frequency" : 17
+  }, {
+    "term" : "spicy",
+    "frequency" : 17
+  }, {
+    "term" : "earthy",
+    "frequency" : 16
+  }, {
+    "term" : "tastes",
+    "frequency" : 16
+  }, {
+    "term" : "oaky",
+    "frequency" : 16
+  }, {
+    "term" : "dark",
+    "frequency" : 16
+  }, {
+    "term" : "raisin",
+    "frequency" : 15
+  }, {
+    "term" : "red",
+    "frequency" : 13
+  }, {
+    "term" : "ripe",
+    "frequency" : 13
+  } ],
+  "Ukraine" : [ {
+    "term" : "sweet",
+    "frequency" : 10
+  }, {
+    "term" : "cherry",
+    "frequency" : 8
+  }, {
+    "term" : "apple",
+    "frequency" : 6
+  }, {
+    "term" : "juice",
+    "frequency" : 6
+  }, {
+    "term" : "lemon",
+    "frequency" : 5
+  }, {
+    "term" : "green",
+    "frequency" : 5
+  }, {
+    "term" : "pomegranate",
+    "frequency" : 4
+  }, {
+    "term" : "sparkling",
+    "frequency" : 4
+  }, {
+    "term" : "black",
+    "frequency" : 4
+  }, {
+    "term" : "persistent",
+    "frequency" : 3
+  }, {
+    "term" : "touch",
+    "frequency" : 3
+  }, {
+    "term" : "nonvintage",
+    "frequency" : 3
+  }, {
+    "term" : "bubbles",
+    "frequency" : 3
+  }, {
+    "term" : "citrus",
+    "frequency" : 3
+  }, {
+    "term" : "froth",
+    "frequency" : 2
+  }, {
+    "term" : "red",
+    "frequency" : 2
+  }, {
+    "term" : "cassis",
+    "frequency" : 2
+  }, {
+    "term" : "plum",
+    "frequency" : 2
+  }, {
+    "term" : "raspberry",
+    "frequency" : 2
+  }, {
+    "term" : "flowers",
+    "frequency" : 2
+  } ],
+  "Moldova" : [ {
+    "term" : "black",
+    "frequency" : 38
+  }, {
+    "term" : "cherry",
+    "frequency" : 29
+  }, {
+    "term" : "red",
+    "frequency" : 19
+  }, {
+    "term" : "lemon",
+    "frequency" : 19
+  }, {
+    "term" : "plum",
+    "frequency" : 19
+  }, {
+    "term" : "sweet",
+    "frequency" : 17
+  }, {
+    "term" : "raspberry",
+    "frequency" : 16
+  }, {
+    "term" : "vanilla",
+    "frequency" : 15
+  }, {
+    "term" : "peach",
+    "frequency" : 12
+  }, {
+    "term" : "apple",
+    "frequency" : 11
+  }, {
+    "term" : "touch",
+    "frequency" : 11
+  }, {
+    "term" : "tannins",
+    "frequency" : 11
+  }, {
+    "term" : "juice",
+    "frequency" : 10
+  }, {
+    "term" : "pineapple",
+    "frequency" : 10
+  }, {
+    "term" : "white",
+    "frequency" : 9
+  }, {
+    "term" : "zest",
+    "frequency" : 8
+  }, {
+    "term" : "persistent",
+    "frequency" : 7
+  }, {
+    "term" : "soft",
+    "frequency" : 7
+  }, {
+    "term" : "grapefruit",
+    "frequency" : 7
+  }, {
+    "term" : "fresh",
+    "frequency" : 7
+  } ],
+  "Switzerland" : [ {
+    "term" : "cherry",
+    "frequency" : 8
+  }, {
+    "term" : "soft",
+    "frequency" : 4
+  }, {
+    "term" : "red",
+    "frequency" : 3
+  }, {
+    "term" : "vanilla",
+    "frequency" : 3
+  }, {
+    "term" : "raspberry",
+    "frequency" : 3
+  }, {
+    "term" : "balanced",
+    "frequency" : 3
+  }, {
+    "term" : "tart",
+    "frequency" : 3
+  }, {
+    "term" : "persistent",
+    "frequency" : 2
+  }, {
+    "term" : "petrol",
+    "frequency" : 2
+  }, {
+    "term" : "full",
+    "frequency" : 2
+  }, {
+    "term" : "tangy",
+    "frequency" : 2
+  }, {
+    "term" : "nuance",
+    "frequency" : 2
+  }, {
+    "term" : "whiff",
+    "frequency" : 2
+  }, {
+    "term" : "apple",
+    "frequency" : 2
+  }, {
+    "term" : "lemon",
+    "frequency" : 2
+  }, {
+    "term" : "green",
+    "frequency" : 2
+  }, {
+    "term" : "cobbler",
+    "frequency" : 2
+  }, {
+    "term" : "berry",
+    "frequency" : 1
+  }, {
+    "term" : "fig",
+    "frequency" : 1
+  }, {
+    "term" : "spice",
+    "frequency" : 1
+  } ],
+  "Spain" : [ {
+    "term" : "berry",
+    "frequency" : 2345
+  }, {
+    "term" : "plum",
+    "frequency" : 2299
+  }, {
+    "term" : "oak",
+    "frequency" : 1264
+  }, {
+    "term" : "fresh",
+    "frequency" : 1124
+  }, {
+    "term" : "cherry",
+    "frequency" : 1120
+  }, {
+    "term" : "blackberry",
+    "frequency" : 1085
+  }, {
+    "term" : "apple",
+    "frequency" : 1064
+  }, {
+    "term" : "spice",
+    "frequency" : 990
+  }, {
+    "term" : "black",
+    "frequency" : 895
+  }, {
+    "term" : "ripe",
+    "frequency" : 893
+  }, {
+    "term" : "tannins",
+    "frequency" : 889
+  }, {
+    "term" : "citrus",
+    "frequency" : 868
+  }, {
+    "term" : "herbal",
+    "frequency" : 829
+  }, {
+    "term" : "vanilla",
+    "frequency" : 823
+  }, {
+    "term" : "raspberry",
+    "frequency" : 812
+  }, {
+    "term" : "earthy",
+    "frequency" : 767
+  }, {
+    "term" : "tannic",
+    "frequency" : 739
+  }, {
+    "term" : "chocolate",
+    "frequency" : 691
+  }, {
+    "term" : "baked",
+    "frequency" : 680
+  }, {
+    "term" : "red",
+    "frequency" : 669
+  } ],
+  "India" : [ {
+    "term" : "grapefruit",
+    "frequency" : 6
+  }, {
+    "term" : "tannins",
+    "frequency" : 5
+  }, {
+    "term" : "pepper",
+    "frequency" : 4
+  }, {
+    "term" : "cherry",
+    "frequency" : 4
+  }, {
+    "term" : "bright",
+    "frequency" : 4
+  }, {
+    "term" : "taste",
+    "frequency" : 3
+  }, {
+    "term" : "buds",
+    "frequency" : 3
+  }, {
+    "term" : "crisp",
+    "frequency" : 3
+  }, {
+    "term" : "almond",
+    "frequency" : 3
+  }, {
+    "term" : "sophisticated",
+    "frequency" : 3
+  }, {
+    "term" : "blossom",
+    "frequency" : 3
+  }, {
+    "term" : "green",
+    "frequency" : 3
+  }, {
+    "term" : "smoke",
+    "frequency" : 3
+  }, {
+    "term" : "black",
+    "frequency" : 3
+  }, {
+    "term" : "apricot",
+    "frequency" : 3
+  }, {
+    "term" : "blackberry",
+    "frequency" : 3
+  }, {
+    "term" : "spice",
+    "frequency" : 2
+  }, {
+    "term" : "white",
+    "frequency" : 2
+  }, {
+    "term" : "brambles",
+    "frequency" : 2
+  }, {
+    "term" : "touch",
+    "frequency" : 2
+  } ],
+  "New Zealand" : [ {
+    "term" : "cherry",
+    "frequency" : 270
+  }, {
+    "term" : "medium-bodied",
+    "frequency" : 243
+  }, {
+    "term" : "ripe",
+    "frequency" : 220
+  }, {
+    "term" : "citrus",
+    "frequency" : 204
+  }, {
+    "term" : "grapefruit",
+    "frequency" : 200
+  }, {
+    "term" : "herbal",
+    "frequency" : 171
+  }, {
+    "term" : "crisp",
+    "frequency" : 169
+  }, {
+    "term" : "tannins",
+    "frequency" : 164
+  }, {
+    "term" : "silky",
+    "frequency" : 155
+  }, {
+    "term" : "melon",
+    "frequency" : 147
+  }, {
+    "term" : "pineapple",
+    "frequency" : 143
+  }, {
+    "term" : "oak",
+    "frequency" : 137
+  }, {
+    "term" : "green",
+    "frequency" : 129
+  }, {
+    "term" : "black",
+    "frequency" : 125
+  }, {
+    "term" : "long",
+    "frequency" : 122
+  }, {
+    "term" : "years",
+    "frequency" : 116
+  }, {
+    "term" : "ample",
+    "frequency" : 114
+  }, {
+    "term" : "cherries",
+    "frequency" : 109
+  }, {
+    "term" : "passion",
+    "frequency" : 108
+  }, {
+    "term" : "vanilla",
+    "frequency" : 107
+  } ],
+  "Lebanon" : [ {
+    "term" : "cherry",
+    "frequency" : 24
+  }, {
+    "term" : "tannins",
+    "frequency" : 14
+  }, {
+    "term" : "red",
+    "frequency" : 13
+  }, {
+    "term" : "peach",
+    "frequency" : 12
+  }, {
+    "term" : "black",
+    "frequency" : 12
+  }, {
+    "term" : "spice",
+    "frequency" : 12
+  }, {
+    "term" : "soft",
+    "frequency" : 10
+  }, {
+    "term" : "ripe",
+    "frequency" : 10
+  }, {
+    "term" : "grapefruit",
+    "frequency" : 7
+  }, {
+    "term" : "lemon",
+    "frequency" : 7
+  }, {
+    "term" : "orange",
+    "frequency" : 6
+  }, {
+    "term" : "eye",
+    "frequency" : 5
+  }, {
+    "term" : "mint",
+    "frequency" : 5
+  }, {
+    "term" : "color",
+    "frequency" : 5
+  }, {
+    "term" : "balance",
+    "frequency" : 5
+  }, {
+    "term" : "rosé",
+    "frequency" : 5
+  }, {
+    "term" : "almond",
+    "frequency" : 4
+  }, {
+    "term" : "touches",
+    "frequency" : 4
+  }, {
+    "term" : "white",
+    "frequency" : 4
+  }, {
+    "term" : "cassis",
+    "frequency" : 4
+  } ],
+  "Canada" : [ {
+    "term" : "fresh",
+    "frequency" : 44
+  }, {
+    "term" : "citrus",
+    "frequency" : 41
+  }, {
+    "term" : "oak",
+    "frequency" : 39
+  }, {
+    "term" : "cherry",
+    "frequency" : 38
+  }, {
+    "term" : "tannins",
+    "frequency" : 35
+  }, {
+    "term" : "honey",
+    "frequency" : 34
+  }, {
+    "term" : "sweet",
+    "frequency" : 31
+  }, {
+    "term" : "rich",
+    "frequency" : 28
+  }, {
+    "term" : "apricot",
+    "frequency" : 28
+  }, {
+    "term" : "apple",
+    "frequency" : 28
+  }, {
+    "term" : "spice",
+    "frequency" : 25
+  }, {
+    "term" : "plum",
+    "frequency" : 23
+  }, {
+    "term" : "ripe",
+    "frequency" : 22
+  }, {
+    "term" : "dry",
+    "frequency" : 22
+  }, {
+    "term" : "smoke",
+    "frequency" : 22
+  }, {
+    "term" : "pineapple",
+    "frequency" : 21
+  }, {
+    "term" : "black",
+    "frequency" : 21
+  }, {
+    "term" : "chocolate",
+    "frequency" : 21
+  }, {
+    "term" : "peach",
+    "frequency" : 21
+  }, {
+    "term" : "dark",
+    "frequency" : 21
+  } ],
+  "Czech Republic" : [ {
+    "term" : "cherry",
+    "frequency" : 9
+  }, {
+    "term" : "black",
+    "frequency" : 8
+  }, {
+    "term" : "plum",
+    "frequency" : 7
+  }, {
+    "term" : "spice",
+    "frequency" : 6
+  }, {
+    "term" : "red",
+    "frequency" : 5
+  }, {
+    "term" : "soft",
+    "frequency" : 3
+  }, {
+    "term" : "floral",
+    "frequency" : 3
+  }, {
+    "term" : "peach",
+    "frequency" : 3
+  }, {
+    "term" : "white",
+    "frequency" : 3
+  }, {
+    "term" : "anise",
+    "frequency" : 3
+  }, {
+    "term" : "touch",
+    "frequency" : 3
+  }, {
+    "term" : "savory",
+    "frequency" : 3
+  }, {
+    "term" : "clove",
+    "frequency" : 3
+  }, {
+    "term" : "drunk",
+    "frequency" : 2
+  }, {
+    "term" : "dark",
+    "frequency" : 2
+  }, {
+    "term" : "toffee",
+    "frequency" : 2
+  }, {
+    "term" : "chinese",
+    "frequency" : 2
+  }, {
+    "term" : "still-youthful",
+    "frequency" : 2
+  }, {
+    "term" : "mineral",
+    "frequency" : 2
+  }, {
+    "term" : "combination",
+    "frequency" : 2
+  } ],
+  "Turkey" : [ {
+    "term" : "cherry",
+    "frequency" : 76
+  }, {
+    "term" : "tannins",
+    "frequency" : 58
+  }, {
+    "term" : "black",
+    "frequency" : 39
+  }, {
+    "term" : "bright",
+    "frequency" : 31
+  }, {
+    "term" : "soft",
+    "frequency" : 26
+  }, {
+    "term" : "orange",
+    "frequency" : 25
+  }, {
+    "term" : "white",
+    "frequency" : 23
+  }, {
+    "term" : "smooth",
+    "frequency" : 23
+  }, {
+    "term" : "blackberry",
+    "frequency" : 22
+  }, {
+    "term" : "peach",
+    "frequency" : 21
+  }, {
+    "term" : "strawberry",
+    "frequency" : 20
+  }, {
+    "term" : "lemon",
+    "frequency" : 19
+  }, {
+    "term" : "violet",
+    "frequency" : 19
+  }, {
+    "term" : "color",
+    "frequency" : 18
+  }, {
+    "term" : "eye",
+    "frequency" : 15
+  }, {
+    "term" : "raspberry",
+    "frequency" : 15
+  }, {
+    "term" : "touch",
+    "frequency" : 14
+  }, {
+    "term" : "pepper",
+    "frequency" : 14
+  }, {
+    "term" : "chocolate",
+    "frequency" : 14
+  }, {
+    "term" : "pomegranate",
+    "frequency" : 13
+  } ],
+  "Italy" : [ {
+    "term" : "cherry",
+    "frequency" : 8086
+  }, {
+    "term" : "tannins",
+    "frequency" : 7463
+  }, {
+    "term" : "black",
+    "frequency" : 6193
+  }, {
+    "term" : "spice",
+    "frequency" : 5363
+  }, {
+    "term" : "white",
+    "frequency" : 4698
+  }, {
+    "term" : "berry",
+    "frequency" : 4371
+  }, {
+    "term" : "red",
+    "frequency" : 3925
+  }, {
+    "term" : "ripe",
+    "frequency" : 3915
+  }, {
+    "term" : "bright",
+    "frequency" : 3578
+  }, {
+    "term" : "fresh",
+    "frequency" : 3179
+  }, {
+    "term" : "pepper",
+    "frequency" : 2767
+  }, {
+    "term" : "leather",
+    "frequency" : 2463
+  }, {
+    "term" : "firm",
+    "frequency" : 2440
+  }, {
+    "term" : "licorice",
+    "frequency" : 2410
+  }, {
+    "term" : "flower",
+    "frequency" : 2374
+  }, {
+    "term" : "peach",
+    "frequency" : 2285
+  }, {
+    "term" : "herb",
+    "frequency" : 2224
+  }, {
+    "term" : "plum",
+    "frequency" : 2180
+  }, {
+    "term" : "oak",
+    "frequency" : 2148
+  }, {
+    "term" : "tobacco",
+    "frequency" : 2131
+  } ],
+  "South Africa" : [ {
+    "term" : "spice",
+    "frequency" : 518
+  }, {
+    "term" : "tannins",
+    "frequency" : 381
+  }, {
+    "term" : "black",
+    "frequency" : 377
+  }, {
+    "term" : "plum",
+    "frequency" : 361
+  }, {
+    "term" : "ripe",
+    "frequency" : 304
+  }, {
+    "term" : "apple",
+    "frequency" : 295
+  }, {
+    "term" : "cherry",
+    "frequency" : 289
+  }, {
+    "term" : "fresh",
+    "frequency" : 289
+  }, {
+    "term" : "red",
+    "frequency" : 284
+  }, {
+    "term" : "sweet",
+    "frequency" : 274
+  }, {
+    "term" : "clean",
+    "frequency" : 237
+  }, {
+    "term" : "soft",
+    "frequency" : 224
+  }, {
+    "term" : "berry",
+    "frequency" : 222
+  }, {
+    "term" : "balanced",
+    "frequency" : 212
+  }, {
+    "term" : "pepper",
+    "frequency" : 202
+  }, {
+    "term" : "white",
+    "frequency" : 201
+  }, {
+    "term" : "citrus",
+    "frequency" : 192
+  }, {
+    "term" : "green",
+    "frequency" : 190
+  }, {
+    "term" : "melon",
+    "frequency" : 182
+  }, {
+    "term" : "rich",
+    "frequency" : 181
+  } ],
+  "Mexico" : [ {
+    "term" : "berry",
+    "frequency" : 24
+  }, {
+    "term" : "spice",
+    "frequency" : 18
+  }, {
+    "term" : "plum",
+    "frequency" : 17
+  }, {
+    "term" : "cherry",
+    "frequency" : 16
+  }, {
+    "term" : "sweet",
+    "frequency" : 13
+  }, {
+    "term" : "melon",
+    "frequency" : 13
+  }, {
+    "term" : "baked",
+    "frequency" : 12
+  }, {
+    "term" : "apple",
+    "frequency" : 12
+  }, {
+    "term" : "herbal",
+    "frequency" : 12
+  }, {
+    "term" : "oak",
+    "frequency" : 11
+  }, {
+    "term" : "raspberry",
+    "frequency" : 11
+  }, {
+    "term" : "dry",
+    "frequency" : 10
+  }, {
+    "term" : "pear",
+    "frequency" : 9
+  }, {
+    "term" : "heavy",
+    "frequency" : 9
+  }, {
+    "term" : "chocolate",
+    "frequency" : 9
+  }, {
+    "term" : "tannins",
+    "frequency" : 9
+  }, {
+    "term" : "citrus",
+    "frequency" : 8
+  }, {
+    "term" : "fiery",
+    "frequency" : 7
+  }, {
+    "term" : "mild",
+    "frequency" : 7
+  }, {
+    "term" : "jammy",
+    "frequency" : 7
+  } ],
+  "Macedonia" : [ {
+    "term" : "cherry",
+    "frequency" : 6
+  }, {
+    "term" : "fresh",
+    "frequency" : 6
+  }, {
+    "term" : "spice",
+    "frequency" : 5
+  }, {
+    "term" : "red",
+    "frequency" : 4
+  }, {
+    "term" : "white",
+    "frequency" : 4
+  }, {
+    "term" : "vanilla",
+    "frequency" : 4
+  }, {
+    "term" : "full",
+    "frequency" : 4
+  }, {
+    "term" : "fruity",
+    "frequency" : 4
+  }, {
+    "term" : "plum",
+    "frequency" : 3
+  }, {
+    "term" : "cheeses",
+    "frequency" : 3
+  }, {
+    "term" : "bright",
+    "frequency" : 3
+  }, {
+    "term" : "black",
+    "frequency" : 3
+  }, {
+    "term" : "blackberry",
+    "frequency" : 3
+  }, {
+    "term" : "grapefruit",
+    "frequency" : 2
+  }, {
+    "term" : "tobacco",
+    "frequency" : 2
+  }, {
+    "term" : "offers",
+    "frequency" : 2
+  }, {
+    "term" : "raspberry",
+    "frequency" : 2
+  }, {
+    "term" : "lush",
+    "frequency" : 2
+  }, {
+    "term" : "leather",
+    "frequency" : 2
+  }, {
+    "term" : "flavorful",
+    "frequency" : 2
+  } ],
+  "Israel" : [ {
+    "term" : "cherry",
+    "frequency" : 390
+  }, {
+    "term" : "black",
+    "frequency" : 330
+  }, {
+    "term" : "tannins",
+    "frequency" : 301
+  }, {
+    "term" : "pepper",
+    "frequency" : 134
+  }, {
+    "term" : "soft",
+    "frequency" : 132
+  }, {
+    "term" : "bright",
+    "frequency" : 122
+  }, {
+    "term" : "blackberry",
+    "frequency" : 116
+  }, {
+    "term" : "plum",
+    "frequency" : 112
+  }, {
+    "term" : "raspberry",
+    "frequency" : 110
+  }, {
+    "term" : "spice",
+    "frequency" : 105
+  }, {
+    "term" : "red",
+    "frequency" : 85
+  }, {
+    "term" : "dark",
+    "frequency" : 84
+  }, {
+    "term" : "touch",
+    "frequency" : 83
+  }, {
+    "term" : "green",
+    "frequency" : 74
+  }, {
+    "term" : "chocolate",
+    "frequency" : 73
+  }, {
+    "term" : "vanilla",
+    "frequency" : 68
+  }, {
+    "term" : "orange",
+    "frequency" : 66
+  }, {
+    "term" : "cassis",
+    "frequency" : 66
+  }, {
+    "term" : "white",
+    "frequency" : 65
+  }, {
+    "term" : "blueberry",
+    "frequency" : 64
+  } ],
+  "Georgia" : [ {
+    "term" : "tannins",
+    "frequency" : 50
+  }, {
+    "term" : "cherry",
+    "frequency" : 36
+  }, {
+    "term" : "bright",
+    "frequency" : 30
+  }, {
+    "term" : "white",
+    "frequency" : 29
+  }, {
+    "term" : "soft",
+    "frequency" : 24
+  }, {
+    "term" : "apple",
+    "frequency" : 23
+  }, {
+    "term" : "blackberry",
+    "frequency" : 21
+  }, {
+    "term" : "black",
+    "frequency" : 21
+  }, {
+    "term" : "chocolate",
+    "frequency" : 20
+  }, {
+    "term" : "georgian",
+    "frequency" : 19
+  }, {
+    "term" : "peach",
+    "frequency" : 18
+  }, {
+    "term" : "orange",
+    "frequency" : 18
+  }, {
+    "term" : "apricot",
+    "frequency" : 18
+  }, {
+    "term" : "color",
+    "frequency" : 17
+  }, {
+    "term" : "violet",
+    "frequency" : 15
+  }, {
+    "term" : "smooth",
+    "frequency" : 15
+  }, {
+    "term" : "lemon",
+    "frequency" : 13
+  }, {
+    "term" : "blueberry",
+    "frequency" : 13
+  }, {
+    "term" : "deep",
+    "frequency" : 12
+  }, {
+    "term" : "touch",
+    "frequency" : 12
+  } ],
+  "Australia" : [ {
+    "term" : "vanilla",
+    "frequency" : 458
+  }, {
+    "term" : "tannins",
+    "frequency" : 438
+  }, {
+    "term" : "crisp",
+    "frequency" : 287
+  }, {
+    "term" : "black",
+    "frequency" : 282
+  }, {
+    "term" : "oak",
+    "frequency" : 280
+  }, {
+    "term" : "medium-bodied",
+    "frequency" : 279
+  }, {
+    "term" : "citrus",
+    "frequency" : 271
+  }, {
+    "term" : "cherry",
+    "frequency" : 263
+  }, {
+    "term" : "full-bodied",
+    "frequency" : 258
+  }, {
+    "term" : "years",
+    "frequency" : 251
+  }, {
+    "term" : "full",
+    "frequency" : 244
+  }, {
+    "term" : "cassis",
+    "frequency" : 236
+  }, {
+    "term" : "dark",
+    "frequency" : 222
+  }, {
+    "term" : "ripe",
+    "frequency" : 221
+  }, {
+    "term" : "long",
+    "frequency" : 219
+  }, {
+    "term" : "supple",
+    "frequency" : 212
+  }, {
+    "term" : "plum",
+    "frequency" : 202
+  }, {
+    "term" : "soft",
+    "frequency" : 193
+  }, {
+    "term" : "spice",
+    "frequency" : 189
+  }, {
+    "term" : "chocolate",
+    "frequency" : 189
+  } ],
+  "Peru" : [ {
+    "term" : "baked",
+    "frequency" : 6
+  }, {
+    "term" : "berry",
+    "frequency" : 6
+  }, {
+    "term" : "plum",
+    "frequency" : 6
+  }, {
+    "term" : "heavy",
+    "frequency" : 5
+  }, {
+    "term" : "earthy",
+    "frequency" : 4
+  }, {
+    "term" : "oak",
+    "frequency" : 4
+  }, {
+    "term" : "oaky",
+    "frequency" : 4
+  }, {
+    "term" : "roasted",
+    "frequency" : 4
+  }, {
+    "term" : "toasty",
+    "frequency" : 3
+  }, {
+    "term" : "chocolate",
+    "frequency" : 3
+  }, {
+    "term" : "creamy",
+    "frequency" : 3
+  }, {
+    "term" : "sweet",
+    "frequency" : 3
+  }, {
+    "term" : "pithy",
+    "frequency" : 3
+  }, {
+    "term" : "full",
+    "frequency" : 3
+  }, {
+    "term" : "herbal",
+    "frequency" : 3
+  }, {
+    "term" : "citrus",
+    "frequency" : 3
+  }, {
+    "term" : "raspberry",
+    "frequency" : 2
+  }, {
+    "term" : "raw",
+    "frequency" : 2
+  }, {
+    "term" : "chunky",
+    "frequency" : 2
+  }, {
+    "term" : "ripe",
+    "frequency" : 2
+  } ],
+  "Germany" : [ {
+    "term" : "riesling",
+    "frequency" : 649
+  }, {
+    "term" : "peach",
+    "frequency" : 646
+  }, {
+    "term" : "dry",
+    "frequency" : 516
+  }, {
+    "term" : "sweet",
+    "frequency" : 509
+  }, {
+    "term" : "mineral",
+    "frequency" : 486
+  }, {
+    "term" : "fresh",
+    "frequency" : 467
+  }, {
+    "term" : "lime",
+    "frequency" : 446
+  }, {
+    "term" : "tangerine",
+    "frequency" : 445
+  }, {
+    "term" : "ripe",
+    "frequency" : 440
+  }, {
+    "term" : "lemon",
+    "frequency" : 420
+  }, {
+    "term" : "honey",
+    "frequency" : 375
+  }, {
+    "term" : "apple",
+    "frequency" : 370
+  }, {
+    "term" : "fruity",
+    "frequency" : 301
+  }, {
+    "term" : "off-dry",
+    "frequency" : 296
+  }, {
+    "term" : "grapefruit",
+    "frequency" : 278
+  }, {
+    "term" : "white",
+    "frequency" : 275
+  }, {
+    "term" : "delicate",
+    "frequency" : 268
+  }, {
+    "term" : "citrus",
+    "frequency" : 267
+  }, {
+    "term" : "juicy",
+    "frequency" : 250
+  }, {
+    "term" : "tones",
+    "frequency" : 244
+  } ]
+}

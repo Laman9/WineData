@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wine Data</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+  <!-- Demo Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.3.2/holder.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="http://www.google.com/jsapi?key=ABCDE"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter2/1.3.14/crossfilter.js"
+          type='text/javascript'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.1/dc.min.js" type='text/javascript'></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" type='text/javascript'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          type='text/javascript'></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+        rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.1/dc.min.css" rel='stylesheet' type='text/css'>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+
+  <script src="lib/d3.v4.3.0.js"></script>
+  <script src="dist/dimple.v2.3.0.js"></script>
+
+  <script>
+    Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+  </script>
+
+  <!-- keen-analysis@1.2.2 -->
+  <script src="https://d26b395fwzu5fz.cloudfront.net/keen-analysis-1.2.2.js" type="text/javascript"></script>
+
+  <!-- keen-dataviz@1.1.3 -->
+  <link href="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.css" rel="stylesheet" />
+  <script src="https://d26b395fwzu5fz.cloudfront.net/keen-dataviz-1.1.3.js" type="text/javascript"></script>  
+
+  <!-- Dashboard -->
+  <link rel="stylesheet" type="text/css" href="css/keen-dashboards.css" />
+</head>
+<body class="keen-dashboard" style="padding-top: 80px;">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <a class="navbar-brand" href="">Reset</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6" style="height: 900px;">
+        <div class="chart-wrapper" style="height: 900px;">
+
+          <div class="chart-stage">
+
+
+            <style>
+              input {
+                border:solid 1px #ccc;
+                border-radius: 5px;
+                padding:7px 14px;
+                margin-bottom:10px;
+
+              }
+              input:focus {
+                outline:none;
+                border-color:#aaa;
+              }
+            </style>
+
+
+            <div id="one">
+              <html>
+              <head>
+                <meta charset="utf-8">
+                <title>Visualization</title>
+                <link rel="stylesheet" href="css/scatter.css">
+              </head>
+              <body>
+
+              <div class="row" style="background-color: white;">
+                <div class="col-sm-5">
+                  <h4 style="margin-left: 10px; margin-top: 10px;">Wine Data</h4>
+                  <input style="margin-left: 10px; margin-top: 10px;" class="form-control" id="input", type="text" placeholder="Enter wine name.."></input>
+
+                  <input style="margin-left: 10px; margin-top: 10px;" class="form-control" id="input3" placeholder="Enter year.." type="text"></input>
+
+                  <input style="margin-left: 10px; margin-top: 10px;" class="form-control" id="input2" placeholder="Enter flavor.." type="text"></input>
+
+                  <label style="margin-left: 10px; margin-top: 10px;" for="button">Country:</label>
+                  <select style="margin-bottom: 10px; width: 250px; margin-left: 10px;" id="country"></select>
+
+                  <label style="margin-left: 10px; margin-top: 10px;" for="slider-container">Select price ($)</label>
+                  <div style="margin-left: 10px; margin-top: 0px; " id="slider-container"></div>
+                  <div  style="margin-left: 10px; margin-top: 10px;" id="range-label">Select price 0$ - 3300$</div>
+
+                  <label style="margin-left: 10px; margin-top: 20px;" for="slider-container">Select points</label>
+                  <div style="margin-left: 10px; margin-top: 0px;" id="slider-container2"></div>
+                  <div style="margin-left: 10px; margin-top: 10px;" id="range-label2">Select points 80 - 100</div>
+
+                      <!--<select id="select-flavor" name="state[]" multiple class="demo-default" style="margin-left: 10px; margin-top: 10px; width: 250px;" placeholder="Select flavor..">-->
+                        <!--<option value="">Select flavor...</option>-->
+                        <!--<option value="AL"></option>-->
+                        <!--<option value="AK">Alaska</option>-->
+                        <!--<option value="AZ">Arizona</option>-->
+                        <!--<option value="AR">Arkansas</option>-->
+                        <!--<option value="CA">California</option>-->
+                        <!--<option value="WY">Wyoming</option>-->
+                      <!--</select>-->
+                    <!--<script>-->
+                        <!--$('#select-flavor').selectize({-->
+                            <!--maxItems: 5-->
+                        <!--});-->
+                    <!--</script>-->
+
+                  <button style="margin-left: 10px; margin-top: 10px;" id="button"> Submit</button>
+                </div>
+                <div  class="col-sm-7" style="margin-top: 25px;">
+                  <style>
+
+
+                    h4,
+                    table, caption, tbody, tfoot, thead, tr, th, td,
+                    article, aside, canvas, details, embed,
+                    figure, figcaption, footer, header, hgroup,
+                    menu, nav, output, ruby, section, summary,
+                    time, mark, audio, video {
+                      margin: 0;
+                      padding: 1px;
+                      border: 0;
+                      font-size: 100%;
+                      font: inherit;
+                      vertical-align: baseline;
+                    }
+
+                    table {
+                      border-radius: inherit;
+                      margin-top: 10px;
+                      margin-left: 0px;
+                    }
+                    table:focus {
+                      outline:none;
+                      border-color:#aaa;
+                    }
+
+                    h4 {
+                      font-weight:bold;
+                    }
+                    /* HTML5 display-role reset for older browsers */
+                    article, aside, details, figcaption, figure,
+                    footer, header, hgroup, menu, nav, section {
+                      display: block;
+                    }
+                    body {
+                      line-height: 1;
+                    }
+                    ol, ul {
+                      list-style: none;
+                    }
+                    blockquote, q {
+                      quotes: none;
+                    }
+                    blockquote:before, blockquote:after,
+                    q:before, q:after {
+                      content: '';
+                      content: none;
+                    }
+                    table {
+                      border-collapse: collapse;
+                      border-spacing: 0;
+                    }
+                    th, td {
+                        border: 1px solid lightgray;
+                        padding: 10px;
+                        text-align: left;
+                    }
+                  </style>
+
+                  <script>
+
+                  </script>
+
+                  <table>
+                    <tr >
+                      <td><h4>Wine Title</h4></td>
+                      <td id="h5_title"></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Country</h4></td>
+                      <td id="h6_country"></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Province</h4></td>
+                      <td id="h6_province"></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Region</h4></td>
+                      <td id="h6_region"></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Price ($)</h4></td>
+                      <td id="h6_price"></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Points</h4></td>
+                      <td id="h6_points"></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Taster Name</h4></td>
+                      <td id="h6_taster"></td>
+                    </tr>
+                    <!--<tr>-->
+                      <!--<td><h4>Winery</h4></td>-->
+                      <!--<td id="h6_winery"></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                    <!--<td><h4>Description</h4></td>-->
+                    <!--<td id="h6_description"></td>-->
+                    <!--</tr>-->
+                    <tr>
+                      <td><h4>Flavors</h4></td>
+                      <td id="h6_flavors"></td>
+                    </tr>
+
+                  </table>
+
+                  <!--<h5 id="h5_title"></h5>-->
+                  <!--<h6 id="h6_country"></h6>-->
+                  <!--<h6 id="h6_province"></h6>-->
+                  <!--<h6 id="h6_region"></h6>-->
+                  <!--<h6 id="h6_price"></h6>-->
+                  <!--<h6 id="h6_points"></h6>-->
+                  <!--<h6 id="h6_designation"></h6>-->
+                  <!--<h6 id="h6_winery"></h6>-->
+
+                </div>
+
+              </div>
+              <div id="tooltip" class="hidden">
+
+              </div>
+
+              <div id="scatter"></div>
+
+              <!-- Range slider code -->
+              <script src="https://cdn.rawgit.com/RasmusFonseca/d3RangeSlider/master/d3RangeSlider.js"></script>
+
+              <!-- Range slider style -->
+              <link href="https://cdn.rawgit.com/RasmusFonseca/d3RangeSlider/master/d3RangeSlider.css" rel="stylesheet">
+
+              <style type="text/css">
+                #slider-container {
+                  position: relative;
+                  height:30px;
+                  background-color: #eeeef5;
+                }
+              </style>
+
+              <style type="text/css">
+                #slider-container2 {
+                  position: relative;
+                  height:30px;
+                  background-color: #eeeef5;
+                }
+              </style>
+              <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+              <!--<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>-->
+              <!--<script src="scatter.js" charset="utf-8"></script>-->
+
+              <script>
+
+                  var minMaxData;
+                  // creating and populating countries dropdown, search function
+                  var countries = ["", "Italy","Portugal","US","Spain","France","Germany","Argentina","Chile","Australia","Austria","South Africa","New Zealand","Israel","Hungary","Greece","Romania","Mexico","Canada","Turkey","Czech Republic","Slovenia","Luxembourg","Croatia","Georgia","Uruguay","England","Lebanon","Serbia","Brazil","Moldova","Morocco","Peru","India","Bulgaria","Cyprus","Armenia","Switzerland","Bosnia and Herzegovina","Ukraine","Slovakia","Macedonia","China","Egypt"]
+                  countries.sort();
+                  countryDropDown = document.getElementById('country' );
+                  for(c in countries ) {
+                      countryDropDown.add( new Option( countries[c] ) );
+                  };
+                  document.getElementById('country').value = "Germany";
+
+                  var slider = createD3RangeSlider(0, 3300, "#slider-container");
+                  slider.onChange(function(newRange){
+                      d3.select("#range-label").text(newRange.begin + " - " + newRange.end);
+                  });
+                  slider.range(0,3300);
+
+                  var slider2 = createD3RangeSlider(0, 100, "#slider-container2");
+                  slider2.onChange(function(newRange){
+                      d3.select("#range-label2").text(newRange.begin + " - " + newRange.end);
+                  });
+                  slider2.range(80,100);
+
+                  var taster_value = "";
+
+                  function getParams() {
+                      var priceRange = slider.range();
+                      var pointRange = slider2.range();
+                      console.log(priceRange.begin + "-" + priceRange.end);
+                      console.log(pointRange.begin + "-" + pointRange.end);
+
+                      return {
+                          'country': countryDropDown.value,
+                          "title": document.getElementById("input").value,
+                          "year": document.getElementById("input3").value,
+                          "description": document.getElementById("input2").value,
+                          "minPrice": priceRange.begin,
+                          "maxPrice": priceRange.end,
+                          "minPoint": pointRange.begin,
+                          "maxPoint": pointRange.end,
+                          "taster_name": taster_value
+                      };
+                  }
+
+                  var margin = { top: 50, right: 300, bottom: 50, left: 50 },
+                      outerWidth = 1050,
+                      outerHeight = 500,
+                      width = outerWidth - margin.left - margin.right,
+                      height = outerHeight - margin.top - margin.bottom;
+
+                  var x = d3.scale.linear()
+                      .range([0, width]).nice();
+
+                  var y = d3.scale.linear()
+                      .range([height, 0]).nice();
+
+                  var xCat = "price",
+                      yCat = "points",
+                      rCat = "price",
+                      colorCat = "variety";
+                  titleCat = "title";
+                  countryName_ = "country";
+                  provinceName = "province";
+                  regionName = "region_1";
+                  designationName = "designation";
+                  description = "description";
+                  flavorsName = "flavors";
+                  tasterName = "taster_name";
+
+                  d3.csv("data/130k.csv", function(dataAll) {
+                      var data = [];
+
+                      var fieldName = "country";
+                      var searchQuery = "Germany";//params[fieldName];
+                      fileteredData = dataAll.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+                      console.log(fileteredData);
+
+                      var fieldName = "title";
+                      var searchQuery = "heinz";//params[fieldName];
+                      fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+                      console.log(fileteredData);
+
+                      var fieldName = "description";
+                      var searchQuery = "dr";//params[fieldName];
+                      fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+                      console.log(fileteredData);
+
+                      data = fileteredData;
+
+                      var xAxis = d3.svg.axis()
+                          .scale(x)
+                          .orient("bottom")
+                          .tickSize(-height);
+
+                      var yAxis = d3.svg.axis()
+                          .scale(y)
+                          .orient("left")
+                          .tickSize(-width);
+
+
+                      var color = d3.scale.category10();
+
+                      var tip = d3.tip()
+                          .attr("class", "d3-tip")
+                          .offset([-10, 0])
+                          .html(function(d) {
+                              return titleCat + ": " + d[titleCat] +  "<br>" + xCat + ": " + d[xCat] + "<br>" + yCat + ": " + d[yCat];
+                          });
+
+                      var xMax = d3.max(data, function(d) { return d[xCat]; }) * 1.05 * 5,
+                          xMin = d3.min(data, function(d) { return d[xCat]; }),
+                          xMin = xMin > 0 ? 0 : xMin,
+                          yMax = 100,
+                          yMin = 80;
+
+                      x.domain([xMin, xMax]);
+                      y.domain([yMin, yMax]);
+
+                      var zoomBeh = d3.behavior.zoom()
+                          .x(x)
+                          .y(y)
+                          .scaleExtent([0, 500])
+                          .on("zoom", zoom);
+
+                      var svg = d3.select("#scatter")
+                          .append("svg")
+                          .attr("width", outerWidth)
+                          .attr("height", outerHeight)
+                          .append("g")
+                          .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                          .call(zoomBeh);
+
+                      svg.selectAll("#scatter").remove();
+
+                      svg.call(tip);
+
+                      svg.append("rect")
+                          .attr("width", width)
+                          .attr("height", height);
+
+
+
+                      svg.append("g")
+                          .classed("x axis", true)
+                          .attr("transform", "translate(0," + height + ")")
+                          .call(xAxis)
+                          .append("text")
+                          .classed("label", true)
+                          .attr("x", width)
+                          .attr("y", margin.bottom - 10)
+                          .style("text-anchor", "end")
+                          .text(xCat);
+
+                      svg.append("g")
+                          .classed("y axis", true)
+                          .call(yAxis)
+                          .append("text")
+                          .classed("label", true)
+                          .attr("transform", "rotate(-90)")
+                          .attr("y", -margin.left)
+                          .attr("dy", ".71em")
+                          .style("text-anchor", "end")
+                          .text(yCat);
+
+                      var objects = svg.append("svg")
+                          .classed("objects", true)
+                          .attr("width", width)
+                          .attr("height", height);
+
+                      objects.append("svg:line")
+                          .classed("axisLine hAxisLine", true)
+                          .attr("x1", 0)
+                          .attr("y1", 0)
+                          .attr("x2", width)
+                          .attr("y2", 0)
+                          .attr("transform", "translate(0," + height + ")");
+
+                      objects.append("svg:line")
+                          .classed("axisLine vAxisLine", true)
+                          .attr("x1", 0)
+                          .attr("y1", 0)
+                          .attr("x2", 0)
+                          .attr("y2", height);
+
+                      var clickBoolean = false;
+
+                      var dots = objects.selectAll(".dot")
+                          .data(data)
+                          .enter().append("circle")
+                      //    .filter(function(d) { return d.price < 50 })
+                          .classed("dot", true)
+                          .attr("r", function (d) { return 4; }) //6 * Math.sqrt(d[rCat] / Math.PI)
+                          .attr("transform", transform)
+                          .style("fill", function(d) { return color(d[colorCat]); })
+                          .on("mouseover", function(d){
+                              tip.show;
+
+                              d3.select(this)
+                                  .transition()
+                                  .duration(100)
+                                  .attr('r', 10)
+                                  .attr('fill', '#ff0000');
+
+                          })
+                          .on("mouseout", function(d){
+                              tip.hide;
+                              if (clickBoolean === true){
+                                  console.log("mouse out click!");
+                                  d3.select(this)
+                                      .transition()
+                                      .duration(100)
+                                      .attr('r', 10)
+                                      .attr('fill', '#000000');
+                              }else{
+
+                                  d3.select(this)
+                                      .transition()
+                                      .duration(100)
+                                      .attr('r', 4)
+                                      .attr('fill', '#000000');
+                              }
+
+                              clickBoolean = false;
+
+                          })
+                          .on("click", function (d) {
+                              updateList(d);
+                              d3.selectAll(".dot").attr('r',4);
+
+                              clickBoolean = true;
+                              console.log(clickBoolean);
+                              d3.select(this).attr('r',10);
+
+//                                console.log(d[designationName]);
+//                                console.log(d[countryName]);
+//                                console.log(d[provinceName]);
+//                                console.log(regionName + ": " + d[regionName]);
+//                                console.log(d[titleCat]);
+
+                          });
+
+                      svg.selectAll("rect")
+                          .on("click", function (d) {
+                              dots.style("fill-opacity", '1');
+                          });
+
+                      var legend = svg.selectAll(".legend")
+                          .data(color.domain())
+                          .enter().append("g")
+                          .classed("legend", true)
+                          .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+
+//                      var el = document.getElementById('button'),
+//                          clickerFn = function() {
+////                              legend.selectAll("circle").remove();
+////                              legend.selectAll("text").remove();
+//                              legend.selectAll("g").remove();
+//                          }
+//                      el.onclick = clickerFn;
+
+                      legend.append("circle")
+                          .attr("r", 3.5)
+                          .attr("cx", width + 20)
+                          .attr("fill", color);
+
+                      legend.append("text")
+                          .attr("x", width + 26)
+                          .attr("dy", ".35em")
+                          .text(function(d) { return d; });
+
+
+                      legend.selectAll('circle').
+                      on('click', function(d) {
+
+                          dots.style("fill-opacity", '1');
+                          dots.filter(function(point) {
+                              console.log(point.variety + ''+ d);
+                              return point.variety != d })
+                              .style("fill-opacity", '0.05');
+
+                      });
+
+                      legend.selectAll('text').
+                      on('click', function(d) {
+
+                          dots.style("fill-opacity", '1');
+                          dots.filter(function(point) {
+                              console.log(point.variety + ''+ d);
+                              return point.variety != d })
+                              .style("fill-opacity", '0.05');
+
+                      });
+
+
+                      function updateList(d){
+
+                          document.getElementById("h5_title").innerHTML = d[titleCat];
+                          document.getElementById("h6_country").innerHTML = d[countryName_];
+                          document.getElementById("h6_province").innerHTML = d[provinceName];
+                          document.getElementById("h6_region").innerHTML = d[regionName];
+                          document.getElementById("h6_price").innerHTML = d[xCat];
+                          document.getElementById("h6_points").innerHTML = d[yCat];
+//                          document.getElementById("h6_designation").innerHTML = d[designationName];
+                        document.getElementById("h6_taster").innerHTML = d[tasterName];
+                          document.getElementById("h6_flavors").innerHTML = d[flavorsName];
+
+                          var flavorArray = d[flavorsName].split(",");
+//                            console.log(flavorArray[0]);
+
+                          var descriptionArray = d[description].split(" ");
+//                            console.log(descriptionArray[0]);
+
+//                        for (var i=0; i < flavorArray.length; i++){
+//                            if (descriptionArray.contains(flavorArray)){
+//
+//                            }
+//                        }
+
+
+
+//                        var ul = d3.select('body').append('ul');
+//
+//                        d3.selectAll("ul").remove();
+//                        ul.selectAll('li').remove();
+//
+//
+//                        var names = [d[designationName], d[countryName], d[provinceName], d[regionName], d[titleCat]];
+//
+//                        var ul = d3.select('body').append('ul');
+//                        ul.selectAll('li')
+//                            .data(names)
+//                            .enter()
+//                            .append('li')
+//                            .html(String);
+                      }
+
+
+                      function update(data) {
+
+
+                          var xMax = d3.max(data, function(d) { return d[xCat]; }) * 1.05 * 5,
+                              xMin = d3.min(data, function(d) { return d[xCat]; }),
+                              xMin = xMin > 0 ? 0 : xMin,
+                              yMax = 100,
+                              yMin = 80;
+
+                          x.domain([xMin, xMax]);
+                          y.domain([yMin, yMax]);
+
+                          var zoomBeh = d3.behavior.zoom()
+                              .x(x)
+                              .y(y)
+                              .scaleExtent([0, 500])
+                              .on("zoom", zoom);
+
+                          var svg = d3.select("#scatter")
+                              .append("svg")
+                              .attr("width", outerWidth)
+                              .attr("height", outerHeight)
+                              .append("g")
+                              .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                              .call(zoomBeh);
+
+
+                          svg.call(tip);
+
+                          svg.append("rect")
+                              .attr("width", width)
+                              .attr("height", height);
+
+                          svg.append("g")
+                              .classed("x axis", true)
+                              .attr("transform", "translate(0," + height + ")")
+                              .call(xAxis)
+                              .append("text")
+                              .classed("label", true)
+                              .attr("x", width)
+                              .attr("y", margin.bottom - 10)
+                              .style("text-anchor", "end")
+                              .text(xCat);
+
+                          svg.append("g")
+                              .classed("y axis", true)
+                              .call(yAxis)
+                              .append("text")
+                              .classed("label", true)
+                              .attr("transform", "rotate(-90)")
+                              .attr("y", -margin.left)
+                              .attr("dy", ".71em")
+                              .style("text-anchor", "end")
+                              .text(yCat);
+
+                          var objects = svg.append("svg")
+                              .classed("objects", true)
+                              .attr("width", width)
+                              .attr("height", height);
+
+                          objects.append("svg:line")
+                              .classed("axisLine hAxisLine", true)
+                              .attr("x1", 0)
+                              .attr("y1", 0)
+                              .attr("x2", width)
+                              .attr("y2", 0)
+                              .attr("transform", "translate(0," + height + ")");
+
+                          objects.append("svg:line")
+                              .classed("axisLine vAxisLine", true)
+                              .attr("x1", 0)
+                              .attr("y1", 0)
+                              .attr("x2", 0)
+                              .attr("y2", height);
+
+
+                          var clickBoolean = false;
+                          dots = objects.selectAll(".dot")
+                              .data(data)
+                              .enter().append("circle")
+                          //    .filter(function(d) { return d.price < 50 })
+                              .classed("dot", true)
+                              .attr("r", function (d) { return 4; }) //6 * Math.sqrt(d[rCat] / Math.PI)
+                              .attr("transform", transform)
+                              .style("fill", function(d) { return color(d[colorCat]); })
+                              .on("mouseover", function(d){
+                                  tip.show;
+                                  d3.select(this)
+                                      .transition()
+                                      .duration(100)
+                                      .attr('r', 10)
+                                      .attr('fill', '#ff0000');
+                              })
+                              .on("mouseout", function(d){
+                                  tip.hide;
+                                  if (clickBoolean === true){
+                                      console.log("mouse out click!");
+                                      d3.select(this)
+                                          .transition()
+                                          .duration(100)
+                                          .attr('r', 10)
+                                          .attr('fill', '#000000');
+                                  }else{
+
+                                      d3.select(this)
+                                          .transition()
+                                          .duration(100)
+                                          .attr('r', 4)
+                                          .attr('fill', '#000000');
+                                  }
+
+                                  clickBoolean = false;
+
+                              })
+                              .on("click", function (d) {
+                                  updateList(d);
+                                  d3.selectAll(".dot").attr('r',4);
+                                  clickBoolean = true;
+                                  console.log(clickBoolean);
+                                  d3.select(this).attr('r',10);
+
+                              });
+
+                          svg.selectAll("rect")
+                              .on("click", function (d) {
+                                  dots.style("fill-opacity", '1');
+                              });
+
+
+
+                          var legend = svg.selectAll(".legend")
+                              .data(color.domain())
+                              .enter().append("g")
+                              .classed("legend", true)
+                              .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+//                          var el = document.getElementById('button'),
+//                              clickerFn = function() {
+//                                  console.log("sdffddfd");
+//                                  legend.selectAll("circle").remove();
+//                                  legend.selectAll("text").remove();
+//
+//
+//                              }
+//                          el.onclick = clickerFn;
+
+                          legend.append("circle")
+                              .attr("r", 3.5)
+                              .attr("cx", width + 20)
+                              .attr("fill", color);
+
+                          legend.append("text")
+                              .attr("x", width + 26)
+                              .attr("dy", ".35em")
+                              .text(function(d) { return d; });
+
+
+
+
+                          legend.selectAll('circle').
+                          on('click', function(d) {
+
+                              dots.style("fill-opacity", '1');
+                              dots.filter(function(point) {
+                                  console.log(point.variety + ''+ d);
+                                  return point.variety != d })
+                                  .style("fill-opacity", '0.05');
+
+                          });
+
+                          legend.selectAll('text').
+                          on('click', function(d) {
+
+                              dots.style("fill-opacity", '1');
+                              dots.filter(function(point) {
+                                  console.log(point.variety + ''+ d);
+                                  return point.variety != d })
+                                  .style("fill-opacity", '0.05');
+
+                          });
+
+
+                          d3.select("input").on("click", change);
+
+                          function change() {
+                              xCat = "price";
+                              xMax = d3.max(data, function(d) { return d[xCat]; });
+                              xMin = d3.min(data, function(d) { return d[xCat]; });
+
+                              zoomBeh.x(x.domain([xMin, xMax])).y(y.domain([yMin, yMax]));
+
+                              var svg = d3.select("#scatter").transition();
+
+                              svg.select(".x.axis").duration(750).call(xAxis).select(".label").text(xCat);
+
+                              objects.selectAll(".dot").transition().duration(1000).attr("transform", transform);
+                          }
+
+                          function zoom() {
+                              svg.select(".x.axis").call(xAxis);
+                              svg.select(".y.axis").call(yAxis);
+
+                              svg.selectAll(".dot")
+                                  .attr("transform", transform);
+                          }
+
+                          function transform(d) {
+                              return "translate(" + x(d[xCat]) + "," + y(d[yCat]) + ")";
+                          }
+                      }
+
+                      d3.select("input").on("click", change);
+
+                      function change() {
+                          xCat = "price";
+                          xMax = d3.max(data, function(d) { return d[xCat]; });
+                          xMin = d3.min(data, function(d) { return d[xCat]; });
+
+                          zoomBeh.x(x.domain([xMin, xMax])).y(y.domain([yMin, yMax]));
+
+                          var svg = d3.select("#scatter").transition();
+
+                          svg.select(".x.axis").duration(750).call(xAxis).select(".label").text(xCat);
+
+                          objects.selectAll(".dot").transition().duration(1000).attr("transform", transform);
+                      }
+
+                      function zoom() {
+                          svg.select(".x.axis").call(xAxis);
+                          svg.select(".y.axis").call(yAxis);
+
+                          svg.selectAll(".dot")
+                              .attr("transform", transform);
+                      }
+
+                      function transform(d) {
+                          return "translate(" + x(d[xCat]) + "," + y(d[yCat]) + ")";
+                      }
+
+                      document.getElementById("button").addEventListener("click", function() {
+
+                          d3.csv("data/130k.csv", function(dataAll) {
+
+//                            var max = d3.max(dataAll, function(d) { return d.price; });
+//                            console.log(max);
+                              var params = getParams();
+                              document.getElementById("scatter").innerHTML = "";
+
+                              var fieldName = "country";
+                              var searchQuery = params[fieldName];
+                              fileteredData = dataAll.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+                              console.log(fileteredData);
+
+                              var fieldName = "title";
+                              var searchQuery = params[fieldName];
+                              fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+//                            console.log(fileteredData);
+
+                              var fieldName = "title";
+                              var searchQuery = params['year'];
+                              fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+//                            console.log(fileteredData);
+
+                              var fieldName = "description";
+                              var searchQuery = params[fieldName];
+                              fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+//                            console.log(fileteredData);
+
+                              var fieldName = "price";
+                              var minPrice = params["minPrice"];
+                              var maxPrice = params["maxPrice"];
+                              console.log(minPrice + " " + maxPrice);
+                              fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName] >= minPrice && wine[fieldName] <= maxPrice);
+                              console.log(fileteredData);
+
+                              var fieldName = "points";
+                              var minPoint = params["minPoint"];
+                              var maxPoint = params["maxPoint"];
+                              console.log(minPrice + " " + maxPrice);
+                              fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName] >= minPoint && wine[fieldName] <= maxPoint);
+                              console.log(fileteredData);
+
+                              var fieldName = "taster_name";
+                              var searchQuery = params[fieldName];
+                              fileteredData = fileteredData.filter(wine => wine[fieldName]!=null && wine[fieldName].toLowerCase().search(searchQuery.toLowerCase())!=-1);
+                            console.log("search query: " + searchQuery);
+//                              console.log("filtered data: " + fileteredData);
+
+                              update(fileteredData);
+                              taster_value = "";
+                          });
+
+                      }, false);
+
+                  });
+
+              </script>
+              </body>
+              </html>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-sm-6" >
+        <div class="row" >
+          <div class="col-sm-12" style="height: 530px;">
+
+              <div class="chart-wrapper" style="height: 520px;">
+
+                <div class="chart-stage">
+                  <div class="col-sm-1">
+                    <div id="chart_div" style="margin-top: 30px; margin-left: 0px;">
+                    </div>
+                    <script>
+
+                      function showMinMax(cName, cMin, cMean, cMax) {
+                          google.load("jquery", "1");
+
+                          // Define our onLoad callback
+                          function OnLoad(){
+//                          alert("Loaded!");
+                          }
+
+                          google.setOnLoadCallback(OnLoad);
+
+                          function drawChart () {
+                              minMaxData = new google.visualization.DataTable();
+                              minMaxData.addColumn('string', 'Category');
+                              minMaxData.addColumn('number', 'Min');
+                              minMaxData.addColumn('number', 'Average');
+                              minMaxData.addColumn('number', 'Max');
+
+                              minMaxData.addRows([
+                                  [cName, cMin, cMean, cMax]
+                              ]);
+
+                              var view = new google.visualization.DataView(minMaxData);
+// duplicate 1 column as a dummy data series, and add intervals to it
+                              view.setColumns([0, 1, {
+                                  id: 'min',
+                                  type: 'number',
+                                  role: 'interval',
+                                  calc: function (dt, row) {
+                                      return dt.getValue(row, 1);
+                                  }
+                              }, {
+                                  id: 'avg',
+                                  type: 'number',
+                                  role: 'interval',
+                                  calc: function (dt, row) {
+                                      return dt.getValue(row, 2);
+                                  }
+                              }, {
+                                  id: 'max',
+                                  type: 'number',
+                                  role: 'interval',
+                                  calc: function (dt, row) {
+                                      return dt.getValue(row, 3);
+                                  }
+                              }, 1, 2, 3]);
+
+                              var chart = new google.visualization.LineChart(document.querySelector('#chart_div'));
+                              chart.draw(view, {
+                                  height: 450,
+                                  width: 110,
+                                  lineWidth:5,
+                                  intervals: {
+                                      style: 'boxes'
+                                  },
+                                  legend: {
+                                      position: 'none'
+                                  },
+                                  series: {
+                                      0: {
+                                          // dummy data series, controls color of intervals
+                                          visibleInLegend: true,
+                                          color: 'white',
+                                          enableInteractivity: true
+                                      },
+                                      1: {
+                                          // min series options
+                                          visibleInLegend: true,
+                                          color: '#ffb3b3',
+                                          enableInteractivity: true
+                                      },
+                                      2: {
+                                          // average series options
+                                          visibleInLegend: true,
+                                          color: '#cd7974',
+                                          enableInteractivity: true
+                                      },
+                                      3: {
+                                          // max series options
+                                          visibleInLegend: true,
+                                          color: '#660000',
+                                          enableInteractivity: true,
+
+                                      }
+                                  }
+                              });
+
+                              google.visualization.events.addListener(chart, "select", selectHandler);
+                              function selectHandler() {
+                                  var selection = chart.getSelection();
+                                  var message = '';
+                                      var item = selection[0];
+                                      if (item.row != null && item.column != null) {
+                                          var cn = item.column -4;
+                                          var str = minMaxData.getValue(item.row, cn);
+                                          message = str;
+                                      } else if (item.row != null) {
+                                          var str = minMaxData.getValue(item.row, 0);
+                                          message += '{row:' + item.row + ', column:none}; value (col 0) = ' + str + '\n';
+                                      } else if (item.column != null) {
+                                          var str = minMaxData.getValue(0, item.column);
+                                          message += '{row:none, column:' + item.column + '}; value (row 0) = ' + str + '\n';
+                                      }
+                                  if (message == '') {
+                                      message = 'nothing';
+                                  }
+
+                                  d3.json("data/minMax.json", function(minMaxData){
+                                      for (var i=0; i<minMaxData.length; i++) {
+                                          if (minMaxData[i]["country"] == cName){
+                                              console.log(minMaxData[i]["country"]);
+                                              var min = minMaxData[i]["min"];
+                                              var max = minMaxData[i]["max"];
+                                              console.log(min);
+                                              console.log(max);
+                                              console.log(message);
+                                              if (message == min) {
+                                                  console.log(minMaxData[i]["cheap"]);
+//                                                  document.getElementById("input").value = minMaxData[i]["cheap"];
+
+                                              } else if(max == message) {
+                                                  console.log(minMaxData[i]["expensive"]);
+//                                                  document.getElementById("input").value = minMaxData[i]["expensive"];
+                                              }
+
+
+                                              //showMinMax(d.properties.name, minMaxData[i]["min"], minMaxData[i]["mean"], minMaxData[i]["max"]);
+                                          }
+                                      }
+
+                                  });
+
+//                                  alert('You selected ' + message);
+                              }
+                          }
+                          google.load('visualization', '1', {packages:['corechart'], callback: drawChart});
+                      }
+
+                      showMinMax("Germany", 5, 42.25754716981132, 775);
+                    </script>
+                  </div>
+                  <div class="col-sm-10" style="margin-left: 28px;">
+                  <div id="two">
+                    <link rel="stylesheet" href="css/mycss.css">
+                    <style>
+
+                      body {
+                        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        position: relative;
+                      }
+
+                      #canvas {
+                      }
+
+                      #canvas-svg {
+                      }
+
+                      .land {
+                        fill: #222;
+                      }
+
+                      .boundary {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-width: 1px;
+                      }
+
+                      #tooltip-container {
+                        position: absolute;
+                        background-color: #fff;
+                        color: #000;
+                        padding: 10px;
+                        border: 1px solid;
+                        display: none;
+                      }
+
+                      .tooltip_key {
+                        font-weight: bold;
+                      }
+
+                      .tooltip_value {
+                        margin-left: 10px;
+                        float: right;
+                      }
+
+                      h4 {
+                        text-align: center;
+                      }
+
+                      div#canvas-svg {
+                        /*        padding-top: 50px;*/
+                        /*        margin-left: 250px;*/
+                      }
+
+                    </style>
+
+
+                    <table border="0" cellpadding="0" style="overflow-y: scroll; border: 1px solid white;" >
+                      <tr style="border: 1px solid white; padding: 0px;">
+                        <td style="border: 1px solid white; padding: 0px;">
+                          <div id="tooltip-container"></div>
+                        </td >
+                        <td style="border: 1px solid white; padding: 0px;" >
+                          <div id="canvas-svg"><h5 id="map"><b>Average points/price</b></h5></div>
+                        </td>
+                        <!--            <td><div id="legend_container"></div></td>-->
+                      </tr>
+                    </table>
+
+                    <div class="mapDiv">
+
+
+                      <!--<script src="global.js" type="text/javascript"></script>-->
+                      <!--<script src="table.js" type="text/javascript"></script>-->
+                      <script>
+                          var globalWines = [];
+                          var barData = [];
+                          var initialBarData = [];
+                          var initialTableData = [];
+
+
+                          d3.json("data/winemag-data-130k-v2.json", function (err, data) {
+                              for (var i = 0; i < data.length; i++) {
+                                  if ("Spain" == data[i].country) {
+                                      initialTableData.push(data[i]);
+                                  }
+                              }
+                              console.log(initialBarData);
+//                            updateData(initialTableData);
+                          });
+
+                          d3.json("data/countryDescriptors.json", function (error, data2) {
+
+                              if (data2.hasOwnProperty("Spain")) {
+                                  updateBarchart(data2["Spain"]);
+                              }
+                          });
+
+                      </script>
+
+                      <script>
+
+                          d3.tsv("data/MyData130.tsv", function (err, data) {
+
+                              var config = {
+                                  "data0": "country",
+                                  "data1": "price",
+                                  "data2": "points",
+                                  "label0": "label 0",
+                                  "label1": "label 1",
+                                  "label2": "label 2",
+                                  "color2": "#660000",
+                                  "color0": "#ffb3b3",
+                                  "width": 550,
+                                  "height": 650
+                              }
+
+                              var width = config.width + 30,
+                                  height = config.height-200;
+
+                              var COLOR_COUNTS = 3;
+
+                              function Interpolate(start, end, steps, count) {
+                                  var s = start,
+                                      e = end,
+                                      final = s + (((e - s) / steps) * count);
+                                  return Math.floor(final);
+                              }
+
+                              function Color(_r, _g, _b) {
+                                  var r, g, b;
+                                  var setColors = function (_r, _g, _b) {
+                                      r = _r;
+                                      g = _g;
+                                      b = _b;
+                                  };
+
+                                  setColors(_r, _g, _b);
+                                  this.getColors = function () {
+                                      var colors = {
+                                          r: r,
+                                          g: g,
+                                          b: b
+                                      };
+                                      return colors;
+                                  };
+                              }
+
+                              function hexToRgb(hex) {
+                                  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                                  return result ? {
+                                      r: parseInt(result[1], 16),
+                                      g: parseInt(result[2], 16),
+                                      b: parseInt(result[3], 16)
+                                  } : null;
+                              }
+
+                              function valueFormat(d) {
+                                  if (d > 1000000000) {
+                                      return Math.round(d / 1000000000 * 10) / 10 + "B";
+                                  } else if (d > 1000000) {
+                                      return Math.round(d / 1000000 * 10) / 10 + "M";
+                                  } else if (d > 1000) {
+                                      return Math.round(d / 1000 * 10) / 10 + "K";
+                                  } else {
+                                      return d;
+                                  }
+                              }
+
+                              var COLOR_FIRST = config.color0, COLOR_LAST = config.color2;
+
+                              var rgb = hexToRgb(COLOR_FIRST);
+
+                              var COLOR_START = new Color(rgb.r, rgb.g, rgb.b);
+
+                              rgb = hexToRgb(COLOR_LAST);
+                              var COLOR_END = new Color(rgb.r, rgb.g, rgb.b);
+
+                              var startColors = COLOR_START.getColors(),
+                                  endColors = COLOR_END.getColors();
+
+                              var colors = [];
+
+                              for (var i = 0; i < COLOR_COUNTS; i++) {
+                                  var r = Interpolate(startColors.r, endColors.r, COLOR_COUNTS, i);
+                                  var g = Interpolate(startColors.g, endColors.g, COLOR_COUNTS, i);
+                                  var b = Interpolate(startColors.b, endColors.b, COLOR_COUNTS, i);
+                                  colors.push(new Color(r, g, b));
+                              }
+
+                              var MAP_KEY = config.data0;
+                              var MAP_VALUE = config.data1;
+
+                              var MAP_KEY2 = config.data0;
+                              var MAP_VALUE2 = config.data2;
+
+                              var projection = d3.geo.mercator()
+                                  .scale((width + 1) / 2 / Math.PI)
+                                  .translate([width / 2, height / 2])
+                                  .precision(.1);
+
+                              var path = d3.geo.path()
+                                  .projection(projection);
+
+                              var graticule = d3.geo.graticule();
+
+                              var svg = d3.select("#canvas-svg").append("svg")
+                                  .attr("width", width)
+                                  .attr("height", height);
+
+                              var legend_svg = d3.select("#legend_container")
+                                  .append("svg")
+                                  .attr({
+                                      "width": 300,
+                                      "height": 300,
+                                  });
+
+                              svg.append("path")
+                                  .datum(graticule)
+                                  .attr("class", "graticule")
+                                  .attr("d", path);
+
+                              var valueHash = {};
+
+                              function log10(val) {
+                                  return Math.log(val);
+                              }
+
+                              data.forEach(function (d) {
+                                  valueHash[d[MAP_KEY]] = +d[MAP_VALUE];
+                              });
+
+                              var pointsHash = {};
+
+                              data.forEach(function (d) {
+                                  pointsHash[d[MAP_KEY2]] = +d[MAP_VALUE2];
+                              });
+
+                              var quantize = d3.scale.quantize()
+                                  .domain([0, 1.0])
+                                  .range(d3.range(COLOR_COUNTS).map(function (i) {
+                                      return i
+                                  }));
+
+                              quantize.domain([d3.min(data, function (d) {
+                                  return (+d[MAP_VALUE])
+                              }),
+                                  d3.max(data, function (d) {
+                                      return (+d[MAP_VALUE])
+                                  })]);
+
+                              d3.json("data/world-topo-min.json", function (error, world) {
+                                  var countries = topojson.feature(world, world.objects.countries).features;
+
+
+                                  svg.append("path")
+                                      .datum(graticule)
+                                      .attr("class", "choropleth")
+                                      .attr("d", path);
+
+                                  var g = svg.append("g");
+
+                                  g.append("path")
+                                      .datum({type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]})
+                                      .attr("class", "equator")
+                                      .attr("d", path);
+
+
+                                  var zoom = d3.behavior.zoom()
+                                  // only scale up, e.g. between 1x and 50x
+                                      .scaleExtent([1, 50])
+                                      .on("zoom", function() {
+                                          // the "zoom" event populates d3.event with an object that has
+                                          // a "translate" property (a 2-element Array in the form [x, y])
+                                          // and a numeric "scale" property
+                                          var e = d3.event,
+                                              // now, constrain the x and y components of the translation by the
+                                              // dimensions of the viewport
+                                              tx = Math.min(0, Math.max(e.translate[0], width - width * e.scale)),
+                                              ty = Math.min(0, Math.max(e.translate[1], height - height * e.scale));
+                                          // then, update the zoom behavior's internal translation, so that
+                                          // it knows how to properly manipulate it on the next movement
+                                          zoom.translate([tx, ty]);
+                                          // and finally, update the <g> element's transform attribute with the
+                                          // correct translation and scale (in reverse order)
+                                          g.attr("transform", [
+                                              "translate(" + [tx, ty] + ")",
+                                              "scale(" + e.scale + ")"
+                                          ].join(" "));
+                                      });
+                                  // then, call the zoom behavior on the svg element, which will add
+                                  // all of the necessary mouse and touch event handlers.
+                                  // remember that if you call this on the <g> element, the even handlers
+                                  // will only trigger when the mouse or touch cursor intersects with the
+                                  // <g> elements' children!
+                                  svg.call(zoom);
+
+
+                                  var legend = legend_svg.selectAll('g.legendEntry')
+                                      .data(quantize.range())
+                                      .enter()
+                                      .append('g')
+                                      .attr('class', 'legendEntry');
+
+
+                                  var country = g.selectAll(".country").data(countries);
+
+                                  var clickCountry = false;
+
+
+                                  country.enter().insert("path")
+                                      .attr("class", "country")
+                                      .attr("d", path)
+                                      .attr("id", function (d, i) {
+                                          return d.id;
+                                      })
+                                      .attr("title", function (d) {
+                                          return d.properties.name;
+                                      })
+                                      .style("fill", function (d) {
+                                          if ((valueHash[d.properties.name])) {
+                                              valueHash[d.properties.value] = valueHash[d[MAP_KEY2]];
+                                              var c = quantize((valueHash[d.properties.name]));
+                                              var color = colors[c].getColors();
+                                              return "rgb(" + color.r + "," + color.g +
+                                                  "," + color.b + ")";
+                                          } else {
+                                              return "#ccc";
+                                          }
+                                      })
+                                      .attr("fill-opacity", "0.5")
+                                      .on("mousemove", function (d) {
+                                          var html = "";
+
+                                          html += "<div class=\"tooltip_kv\">";
+                                          html += "<span class=\"tooltip_key\">";
+                                          html += d.properties.name;
+                                          html += "</span>";
+                                          html += "<span class=\"tooltip_value\">";
+                                          html += (valueHash[d.properties.name] ? "Price: " + valueFormat(valueHash[d.properties.name]) + "$" +
+                                              "<br/>" + "Point: " + valueFormat(pointsHash[d.properties.name]) : "");
+                                          html += "";
+                                          html += "</span>";
+                                          html += "</div>";
+
+
+
+                                          $("#tooltip-container").html(html);
+                                          $(this).attr("fill-opacity", "1.0");
+                                          $("#tooltip-container").show();
+
+
+                                          var coordinates = d3.mouse(this);
+
+                                          var map_width = $('.choropleth')[0].getBoundingClientRect().width;
+
+                                          if (d3.event.pageX < map_width / 2) {
+                                              d3.select("#tooltip-container")
+                                                  .style("top", (d3.event.layerY + 15) + "px")
+                                                  .style("left", (d3.event.layerX + 15) + "px");
+                                          } else {
+                                              var tooltip_width = $("#tooltip-container").width();
+                                              d3.select("#tooltip-container")
+                                                  .style("top", (d3.event.layerY + 15) + "px")
+                                                  .style("left", (d3.event.layerX - tooltip_width - 30) + "px");
+                                          }
+                                      })
+                                      .on("mouseout", function () {
+
+                                          if (clickCountry == true){
+//                                            $(this).attr("fill-opacity", "0.0");
+                                              $(this).attr("fill-opacity", "1.0");
+                                          } else {
+                                              $(this).attr("fill-opacity", "0.5");
+                                          }
+
+                                          clickCountry = false;
+
+                                          $("#tooltip-container").hide();
+                                      })
+
+                                      .on("click", function (d) {
+
+                                          clickCountry = true;
+
+                                          document.getElementById('country').value = d.properties.name;
+                                          document.getElementById("button").click();
+
+                                          d3.json("data/minMax.json", function(minMaxData){
+                                              for (var i=0; i<minMaxData.length; i++) {
+                                                  if (minMaxData[i]["country"] == d.properties.name){
+                                                      showMinMax(d.properties.name, minMaxData[i]["min"], minMaxData[i]["mean"], minMaxData[i]["max"]);
+                                                  }
+                                              }
+
+                                          });
+
+//                                          showMinMax(d.properties.name, 200, 500, 1000);
+
+//                                        var color = $('option:selected',this).css('background-color');
+//                                        $(this).css('background-color',color);
+
+                                          g.selectAll(".country")
+                                              .attr("fill-opacity", "0.5");
+
+                                          $(this).attr("fill-opacity", "1.0");
+
+                                          countryName = "";
+                                          barData = [];
+
+
+                                          d3.json("data/winemag-data-130k-v2.json", function (err, data) {
+                                              countryName = d.properties.name;
+
+                                              for (var i = 0; i < data.length; i++) {
+
+                                                  if (countryName == data[i].country) {
+                                                      globalWines.push(data[i]);
+                                                  }
+
+                                              }
+
+                                              document.getElementById("countryName").innerHTML = "Selected Country: " + countryName;
+//                                    d3.select("div.myclass")
+//                                        .append("span")
+//                                        .text(function (d) {
+//                                            return countryName;
+//                                        });
+
+                                              d3.selectAll("div.myclass").each(function(d, i) {
+                                                  d3.select(this).text("Country: " + countryName);
+                                              });
+
+
+                                              updateData(globalWines);
+                                              globalWines = [];
+
+
+
+                                          });
+
+//                                        countryName = "";
+
+
+                                          d3.json("data/countryDescriptors.json", function (error, data2) {
+                                              var countryName = d.properties.name;
+
+                                              if (data2.hasOwnProperty(countryName)) {
+//                                        console.log(data2[countryName]);
+                                                  barData = data2[countryName];
+                                                  updateBarchart(barData);
+
+                                              }
+                                          })
+
+                                      });
+
+                                  g.append("path")
+                                      .datum(topojson.mesh(world, world.objects.countries, function (a, b) {
+                                          return a !== b;
+                                      }))
+                                      .attr("class", "boundary")
+                                      .attr("d", path);
+
+//                                svg.attr("height", config.height * 2.2 / 3);
+                              });
+
+//                            d3.select(self.frameElement).style("height", (height - 100) + "px");
+//                            d3.select(self.frameElement).style("width", (width + 340) + "px");
+                          });
+
+                      </script>
+
+                    </div>
+                  </div>
+
+
+                  <div class="legend1" >
+                    <img src="image/legend.png" alt="Legend" style="height: 310px; width: 100px; margin-left: 50px;">
+                    <div class="legend2" > <p class="country-name"><span style="align-items: right;" class="key-dot empty"></span>no data</p> </div>
+                    <div style="margin-top: 20px; "><h5 id="countryName" style="text-align: left;">Selected Country: -</h5></div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-12" style="height: 370px;">
+            <div class="chart-wrapper" style="height: 370px;" >
+
+              <div class="chart-stage">
+                <h5 style="margin-top: 20px;"><b>Visualization of flavors</b></h5>
+
+                <div class="col-sm-9" style="margin-top: 40px;">
+                  <div id="three">
+                    <html>
+                    <body>
+
+
+                    <style>
+
+                      body {
+                        font: 10px sans-serif;
+                      }
+
+                      .axis path,
+                      .axis line1 {
+                        fill: none;
+                        /*stroke: #000;*/
+                        shape-rendering: crispEdges;
+                      }
+
+                      .bar {
+                        fill: #ffad00;
+                      }
+
+                      svg{
+                        margin-top: 5px;
+                      }
+
+                      .bar:hover {
+                        fill: #ffff00 ;
+                      }
+
+                      .x.axis path {
+                        display: none;
+                      }
+
+                      .d3-tip {
+                        line-height: 1;
+                        font-weight: bold;
+                        padding: 12px;
+                        background: rgba(0, 0, 0, 0.8);
+                        color: #fff;
+                        border-radius: 2px;
+                      }
+
+                      /* Creates a small triangle extender for the tooltip */
+                      .d3-tip:after {
+                        box-sizing: border-box;
+                        display: inline;
+                        font-size: 10px;
+                        width: 100%;
+                        line-height: 1;
+                        color: rgba(0, 0, 0, 0.8);
+                        content: "\25BC";
+                        position: absolute;
+                        text-align: center;
+                      }
+
+                      /* Style northward tooltips differently */
+                      .d3-tip.n:after {
+                        margin: -1px 0 0 0;
+                        top: 100%;
+                        left: 0;
+                      }
+                    </style>
+
+                    <!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
+                    <script>
+                        d3.json("data/countryDescriptors.json", function(error, data) {
+//                console.log(Object.keys(data));
+//                console.log(data["Spain"]);
+                        });
+                    </script>
+
+
+
+                    <!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
+                    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+                    <script>
+
+                        var margin1 = {top: 0, right: 20, bottom: 30, left: 40},
+                            width1 = 700 - margin1.left - margin1.right,
+                            height1 = 250 - margin1.top - margin1.bottom;
+
+                        //var formatPercent = d3.format(".0%");
+
+                        var x1 = d3.scale.ordinal()
+                            .rangeRoundBands([0, width1], .1);
+
+                        var y1 = d3.scale.linear()
+                            .range([height1, 0]);
+
+                        var colorScale1 = d3.scale.category10();
+
+                        var xAxis1 = d3.svg.axis()
+                            .scale(x1)
+                            .orient("bottom");
+
+                        var yAxis1 = d3.svg.axis()
+                            .scale(y1)
+                            .orient("left");
+
+                        var tip1 = d3.tip()
+                            .attr('class', 'd3-tip')
+                            .offset([-10, 0])
+                            .html(function(d) {
+                                return "<strong>Frequency:</strong> <span style='color:#FF0000'>" + d.frequency + "</span>";
+                            })
+
+                        var svg = d3.select("#three").append("svg")
+                            .attr("width", width1 + margin1.left + margin1.right)
+                            .attr("height", height1 + margin1.top + margin1.bottom)
+                            .append("g")
+                            .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
+
+                        svg.call(tip1);
+
+
+                        function updateBarchart(newData) {
+                            data = [];
+                            data = newData;
+                            x1.domain(data.map(function(d) { return d.term; }));
+                            y1.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+                            colorScale1.domain(data.map(function (d){ return d["term"]; }));
+
+                            svg.selectAll("g")
+                                .remove();
+
+                            svg.selectAll(".bar")
+                                .remove();
+
+                            svg.append("g")
+                                .attr("class", "x axis")
+                                .attr("transform", "translate(0," + height1 + ")")
+                                .call(xAxis1)
+                                .selectAll("text")
+                                .attr("transform", "rotate(-20)");
+
+                            svg.append("g")
+                                .attr("class", "y axis")
+                                .call(yAxis1)
+                                .append("text")
+                                .attr("transform", "rotate(-90)")
+                                .attr("y", 6)
+                                .attr("dy", "0.3em")
+                                .style("text-anchor", "end");
+                            svg.selectAll(".bar")
+                                .data(data)
+                                .enter().append("rect")
+                                .attr("class", "bar")
+                                .attr("x", function(d) { return x1(d.term); })
+                                .attr("width", x1.rangeBand())
+                                .attr("y", function(d) { return y1(d.frequency); })
+                                .attr("height", function(d) { return height1 - y1(d.frequency); })
+                                .attr("fill", function (d){ return colorScale1(d["term"]); })
+                                .on('mouseover', tip1.show)
+                                .on('mouseout', tip1.hide)
+                                .on('click', function (d) {
+                                    document.getElementById('input2').value = d.term;
+                                    document.getElementById("button").click();
+                                });
+
+
+                        }
+                    </script>
+                    </body>
+                    </html>
+
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="cont">
+                    <h6 style="margin-left: 20px;">TOP 20 FLAVORS</h6>
+                    <ul>
+                      <li>x axis - flavor name</li>
+                      <li>y axis - frequency</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-sm-12" style="height: 900px;">
+        <div class="chart-wrapper" style="height: 550px;">
+
+          <div class="chart-stage">
+            <h5><b>Countries reviewed by Tasters</b></h5>
+            <div class="col-sm-10">
+              <div id="chartContainer">
+                <script type="text/javascript">
+                    var svg1 = dimple.newSvg("#chartContainer", 1800, 500);
+                    d3.tsv("data/bubbleData.tsv", function (data) {
+                        var myChart = new dimple.chart(svg1, data);
+                        myChart.setBounds(150, 20, 1600, 325)
+                        myChart.addCategoryAxis("x", ["Country"]);
+                        myChart.addCategoryAxis("y", ["Taster Name"]);
+                        myChart.addColorAxis("Average Point", ["#FFFFFF", "#FF0000"])
+                        var s = myChart.addSeries(["Average Point", "Number of Reviews", "Country", "Taster Name", "Similarity"], dimple.plot.bubble);
+
+                        s.addEventHandler("click", function (e) { // "mouseover"
+                            console.log(e.yValue);
+                            console.log(e.xValue);
+                            document.getElementById('country').value = e.xValue;
+                            taster_value = e.yValue;
+                            document.getElementById("button").click();
+//                              console.log(e.seriesValue);
+                        });
+
+                        myChart.addLegend(240, 10, 330, 20, "bottom");
+                        s.getTooltipText = function (e) {
+                            return [
+                                "Average Point: " + e.aggField[0],
+                                "Number of Reviews: " + e.aggField[1],
+                                "Country: " + e.aggField[2],
+                                "Taster Name: " + e.aggField[3]
+//                                "Similarity: " + e.aggField[4]
+                            ];
+                        };
+
+//                        var clickCircle = false;
+//
+//                        s.addEventHandler("click", function(e){
+//                            clickCircle = true;
+//                            svg.selectAll("cirlce")
+//                                .attr("opacity", 0.2)
+//                                .attr("r", 30);
+//                        });
+//
+//                        s.addEventHandler("mouseover", function(e){
+//                            svg.selectAll("circle")
+//                                .attr("opacity", 0.2)
+//                                .attr("r", 30);
+//                        });
+//
+//                        s.addEventHandler("mouseout", function(e){
+//                            if (clickCircle == false){
+//                                svg.selectAll("circle")
+//                                    .attr("opacity", 0.2)
+//                                    .attr("r", 5);
+//                            }
+//                        });
+
+                        myChart.draw();
+                    });
+                </script>
+              </div>
+            </div>
+            <div class="col-sm-2" style="margin-top: 420px;">
+              <h5 style="text-align: left; margin-left: 80px;">Average point</h5>
+              <img src="image/legendBubble.png" alt="Legend" style="margin-left: 15px; width: 100%; height: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Analytics -->
+  <script type="text/javascript" src="keen-analytics.js"></script>
+</body>
+</html>

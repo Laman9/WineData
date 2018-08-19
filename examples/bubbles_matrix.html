@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+
+<div id="chartContainer">
+  <script src="../lib/d3.v4.3.0.js"></script>
+  <script src="../dist/dimple.v2.3.0.js"></script>
+  <script type="text/javascript">
+    var svg = dimple.newSvg("#chartContainer", 750, 500);
+    d3.tsv("../data/bubbleData.tsv", function (data) {
+      var myChart = new dimple.chart(svg, data);
+      myChart.setBounds(150, 20, 600, 325)
+      myChart.addCategoryAxis("x", ["Country"]);
+      myChart.addCategoryAxis("y", ["Taster Name"]);
+      myChart.addColorAxis("Average Point", ["#FFFFFF", "#FF0000"])
+      var s = myChart.addSeries(["Average Point", "Number of Reviews", "Country", "Taster Name", "Similarity"], dimple.plot.bubble);
+    myChart.addLegend(240, 10, 330, 20, "bottom");
+        s.getTooltipText = function (e) {
+                return [
+                    "Average Point: " + e.aggField[0],
+                    "Number of Reviews: " + e.aggField[1],
+                    "Country: " + e.aggField[2],
+                    "Taster Name: " + e.aggField[3],
+                    "Similarity: "+ e.aggField[4]
+                ];
+            };
+        
+      myChart.draw();
+    });
+  </script>
+</div>
+
+</html>

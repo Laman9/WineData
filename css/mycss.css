@@ -1,0 +1,177 @@
+body{
+
+/*align-content: center;*/
+}
+
+/*div.mapDiv{*/
+    /*width: 300px;*/
+    /*height: 200px;*/
+/*}*/
+
+/*svg{*/
+    /*height:350px;*/
+/*}*/
+
+
+h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+h5 {
+    margin-left: 30px;
+    text-align: center;
+}
+
+h6{
+    margin-left: 5px;
+}
+
+
+/*section {*/
+    /*width: 140%;*/
+    /*height: 100%;*/
+    /*margin: auto;*/
+
+/*!*    padding: 10px;*!*/
+/*}*/
+div#two {
+    background: white;
+    margin-top: 5px;
+    /*margin-left: 5px;*/
+    float: left;
+
+}
+
+/*div#two {*/
+    /*width: 38%;*/
+    /*background: white;*/
+    /*margin-left: 5px;*/
+    /*margin-top: 5px;*/
+    /*margin-right: 5px;*/
+    /*height: 80%;*/
+    /*!*background: yellow;*!*/
+    /*float: left;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #bfbfbf;*/
+/*}*/
+
+
+/*div#legBar {*/
+    /*width: 100%;*/
+    /*height: 30px;*/
+    /*background: white;*/
+    /*float: left;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #bfbfbf;*/
+    /*margin-left: 5px;*/
+    /*margin-top: 5px;*/
+    /*border-bottom: hidden;*/
+
+/*}*/
+
+/*div#three {*/
+    /*width: 39.3%;*/
+    /*height: 35%;*/
+    /*background: white;*/
+    /*float: left;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #bfbfbf;*/
+    /*margin-left: 5px;*/
+    /*margin-top: 5px;*/
+    /*border-right: hidden;*/
+    /*!*border-top: hidden;*!*/
+
+/*}*/
+
+/*div#five {*/
+    /*width: 11%;*/
+    /*height: 35%;*/
+    /*background: white;*/
+    /*float: left;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #bfbfbf;*/
+    /*border-left: hidden;*/
+    /*!*border-top: hidden;*!*/
+    /*margin-top: 5px;*/
+/*}*/
+
+/*div#four {*/
+    /*width: 70px;*/
+    /*height: 80%;*/
+    /*margin-top: 5px;*/
+    /*margin-left: 5px;*/
+    /*background:  white;*/
+    /*float: left;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: #bfbfbf;*/
+    /*border-right: hidden;*/
+/*}*/
+
+
+
+
+div.legend1{
+    /*margin-right: 50px;*/
+    margin-top: 90px;
+    /*margin-right: 10px;*/
+
+}
+
+div.legend2 {
+    margin-top: 20px;
+}
+
+/*div.legend2{*/
+    /*margin-left: 5px;*/
+/*}*/
+
+
+/*HTML Vertical Lengend*/
+
+h3 {
+    margin-top: 15px;
+}
+
+
+.key-dot {
+    display: inline-block;
+    height: 10px;
+    margin-right: .5em;
+    width: 10px;
+}
+
+.legend {
+    margin-right:20px;
+}
+
+.high { background: #930000;}
+.medium { background: #b95c5c;}
+.low { background: #ff8080;}
+.empty { background: #b3b3b3;
+}
+
+div#cont{
+    margin-top: 45px;
+}
+
+li{
+    font-size: 11px;
+}
+
+/*div#six {*/
+    /*width: 50%;*/
+    /*height: 500px;*/
+    /*background: white;*/
+    /*!*float: left;*!*/
+    /*!*background-color: #aaaaaa;*!*/
+/*}*/
+
+
